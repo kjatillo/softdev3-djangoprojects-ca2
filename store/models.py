@@ -11,7 +11,7 @@ class Genre(models.Model):
         editable=False)
     name = models.CharField(max_length=250, unique=True)
     description = models.TextField(blank = True)
-    image = models.ImageField(upload_to = 'genre', blank=True)
+    image = models.ImageField(upload_to = 'genre', blank=True)  # ImageField from Pillow
 
 
     class Meta:
@@ -20,7 +20,7 @@ class Genre(models.Model):
         verbose_name_plural = 'genres'
     
     def get_absolute_url(self):
-        return reverse('shop:products_by_genre', args=[self.id])
+        return reverse('shore:products_by_genre', args=[self.id])
     def __str__(self):
         return self.name
 
@@ -43,6 +43,6 @@ class Product(models.Model):
         verbose_name = 'product'
         verbose_name_plural = 'products'
     def get_absolute_url(self):
-        return reverse('shop:product_detail', args=[self.genre.id, self.id])
+        return reverse('shore:product_detail', args=[self.genre.id, self.id])
     def __str__(self):
         return self.name
