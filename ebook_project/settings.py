@@ -41,8 +41,8 @@ INSTALLED_APPS = [
     'accounts',
     'store',
     # 3rd party
-    'crispy_forms',
-    'crispy_bootstrap5',
+    # 'crispy_forms',
+    # 'crispy_bootstrap5',
 ]
 
 MIDDLEWARE = [
