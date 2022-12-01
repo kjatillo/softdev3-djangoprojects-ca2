@@ -8,7 +8,7 @@ class GenreAdmin(admin.ModelAdmin):
 admin.site.register(Genre, GenreAdmin)
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ['name', 'price', 'description', 'genre', 'stock', 'available', 'created', 'updated']
-    list_editable = ['price', 'stock', 'available']
+    list_display = ['name', 'price', 'description', 'genre', 'available', 'created', 'updated']
+    list_editable = ['price', 'available']
     list_per_page = 15
 admin.site.register(Product, ProductAdmin)
