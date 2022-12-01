@@ -29,7 +29,8 @@ class Product(models.Model):
             primary_key=True,
             default=uuid.uuid4,
             editable=False)
-    name = models.CharField(max_length=250, unique=True)
+    name = models.CharField(max_length=250)
+    author = models.CharField(max_length=100, default=None)
     description = models.TextField(blank = True)
     genre = models.ForeignKey(Genre, on_delete=models.CASCADE)
     price = models.DecimalField(max_digits=10, decimal_places=2)
