@@ -48,3 +48,8 @@ nav #nav-login {
     margin-top: auto;
     margin-bottom: auto;
 }
+
+/* Footer */
+footer, footer i {
+    color: #f3f6f4;
+}
