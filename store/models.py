@@ -11,7 +11,7 @@ class Genre(models.Model):
         editable=False)
     name = models.CharField(max_length=250, unique=True)
     description = models.TextField(blank = True)
-    image = models.ImageField(upload_to = 'genre', blank=True)  # ImageField from Pillow
+    image = models.ImageField(upload_to = 'media/genre', blank=True)  # ImageField from Pillow
 
 
     class Meta:
@@ -34,7 +34,7 @@ class Product(models.Model):
     description = models.TextField(blank = True)
     genre = models.ForeignKey(Genre, on_delete=models.CASCADE)
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    image = models.ImageField(upload_to = 'product', blank=True)
+    image = models.ImageField(upload_to = 'media/product', blank=True)
     stock = models.IntegerField()
     available = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True, blank = True, null= True)
