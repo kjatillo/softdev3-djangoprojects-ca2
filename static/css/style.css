@@ -3,3 +3,48 @@
     text-transform: uppercase;
     letter-spacing: .2em;
 }
+
+/* Header */
+header {
+    background-color: #f3f6f4;
+}
+
+header #nav-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+header i {
+    color: #000;
+    font-size: 1.5rem;
+}
+
+header .input-group {
+    width: 75%;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+nav ul, nav li {
+    padding-left: .5rem;
+    padding-right: .5rem
+}
+
+nav #nav-login {
+    justify-content: end;
+    margin-top: auto;
+    margin-bottom: auto;
+}
