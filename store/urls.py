@@ -6,7 +6,7 @@ app_name = 'store'
 # ---------------------------------
 
 urlpatterns = [
-    path('', views.product_view, name='all_products'),
-    path('<uuid:genre_id>/', views.product_view, name = 'products_by_genre'),
-    path('<uuid:genre_id>/<uuid:product_id>', views.product_detail, name = 'product_detail'),
+    path('', views.book_view, name='all_books'),
+    path('<uuid:genre_id>/', views.book_view, name = 'books_by_genre'),
+    path('<uuid:genre_id>/<uuid:book_id>', views.book_detail, name = 'book_detail'),
 ]

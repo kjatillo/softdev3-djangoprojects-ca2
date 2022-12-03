@@ -1,18 +1,18 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Genre, Product
+from .models import Genre, Ebook
 # Create your views here.
 
-def product_view(request, genre_id=None):
+def book_view(request, genre_id=None):
     genre = None
-    products = Product.objects.filter(available=True)
+    books = Ebook.objects.filter(available=True)
     if genre_id:
         genre = get_object_or_404(Genre, id=genre_id)
-        products = Product.objects.filter(genre=genre, available=True)
+        books = Ebook.objects.filter(genre=genre, available=True)
     return render(request, 'store/genre.html', {
         'genre': genre,
-        'prods': products
+        'ebooks': books
     })
 
-def product_detail(request, genre_id, product_id):
-    product = get_object_or_404(Product, genre_id=genre_id, id=product_id)
-    return render(request, 'shop/product.html', {'product':product})
+def book_detail(request, genre_id, book_id):
+    book = get_object_or_404(Ebook, genre_id=genre_id, id=book_id)
+    return render(request, 'store/book.html', {'book':book})
