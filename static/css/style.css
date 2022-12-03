@@ -1,5 +1,5 @@
 .my_title {
-    font-size: 2em;
+    font-size: 1em;
     text-transform: uppercase;
     letter-spacing: .2em;
 }
@@ -9,7 +9,16 @@ header {
     background-color: #f3f6f4;
 }
 
-header #nav-main {
+header a {
+    text-decoration: none;
+    color: #000;
+}
+
+header a:hover {
+    color: #000;
+}
+
+#nav-main {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -26,14 +35,12 @@ header .input-group {
     width: 75%;
 }
 
-.form-control:focus {
+header .form-control:focus {
     box-shadow: none;
 }
 
 /* Navigation */
-nav {
-    display: flex;
-    justify-content: space-between;
+#collapsibleNavbar {
     padding-top: .5rem;
     padding-bottom: .5rem;
 }
@@ -43,13 +50,38 @@ nav ul, nav li {
     padding-right: .5rem
 }
 
-nav #nav-login {
+#nav-login {
     justify-content: end;
     margin-top: auto;
     margin-bottom: auto;
 }
 
+nav ul li {
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: 12px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: 12px;
+}
+
+#nav-login .dropdown-menu li {
+    padding: 0;
+}
+
 /* Footer */
 footer, footer i {
     color: #f3f6f4;
+}
+
+/* Media Query */
+@media screen and (min-width: 800px) {
+    nav #collapsibleNavbar {
+        display: flex;
+        justify-content: space-between;
+    }
 }
