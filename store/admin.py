@@ -8,7 +8,7 @@ class GenreAdmin(admin.ModelAdmin):
 admin.site.register(Genre, GenreAdmin)
 
 class EbookAdmin(admin.ModelAdmin):
-    list_display = ['name', 'price', 'description', 'genre', 'available', 'date_added', 'updated']
+    list_display = ['name', 'price', 'available', 'date_added', 'updated']
     list_editable = ['price', 'available']
     list_per_page = 15
 admin.site.register(Ebook, EbookAdmin)
