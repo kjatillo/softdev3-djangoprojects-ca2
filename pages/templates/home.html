@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Carousel -->
+<div id="banner-home" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#banner-home" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#banner-home" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#banner-home" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'images/home_banner_reading_sofa.jpg' %}" alt="Girl reading book lying on sofa" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+                <h3>Relax</h3>
+                <p>eBook and chill</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/home_banner_library.jpg' %}" alt="Girl reading book in library" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+                <h3>Explore</h3>
+                <p>Browse our selection of eBooks</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/home_banner_under_sheet.jpg' %}" alt="Family reading story under the sheet" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+                <h3>Fun</h3>
+                <p>Enjoy a bedtime story with the kids</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#banner-home" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#banner-home" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<section id="home-intro" class="text-center">
+    <h1>eBook Store</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac nisl vel enim laoreet scelerisque. Nunc rutrum non turpis ac ultrices. Sed facilisis commodo magna, at hendrerit sem bibendum non. Donec in interdum mi. Nullam rutrum efficitur tincidunt. Aenean molestie diam ac pretium volutpat. Proin porttitor neque lacinia facilisis dapibus. Sed ut porttitor mi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac nisl vel enim laoreet scelerisque. Nunc rutrum non turpis ac ultrices. Sed facilisis commodo magna, at hendrerit sem bibendum non. Donec in interdum mi. Nullam rutrum efficitur tincidunt. Aenean molestie diam ac pretium volutpat. Proin porttitor neque lacinia facilisis dapibus. Sed ut porttitor mi.
+    </p>
+</section>
+
+<section id="explore">
+    <div class="explore-content">
+        <h1>Explore our selection of eBooks</h1>
+    </div>
+
+    <div class="explore-content">
+        <h3 class="my_title">Browse by Genre</h3>
+        <div class="explore-btn-container">
+            <button class="btn btn-default border-dark">
+                <a href="#">Adventure</a>
+            </button>
+            <button class="btn btn-default border-dark">
+                <a href="#">Romance</a>
+            </button>
+            <button class="btn btn-default border-dark">
+                <a href="#">Technology</a>
+            </button>
+            <button class="btn btn-default border-dark">
+                <a href="#">Science Fiction</a>
+            </button>
+            <button class="btn btn-default border-dark">
+                <a href="#">Fantasy</a>
+            </button>
+        </div>
+    </div>
+</section>
+{% endblock content %}

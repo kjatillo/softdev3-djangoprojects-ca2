@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'accounts',
     'store',
     'order',
+    'pages',
     # 3rd party
     'crispy_forms',
     'crispy_bootstrap5',
