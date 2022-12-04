@@ -26,7 +26,7 @@ class Order(models.Model):
 
 class OrderItem(models.Model):
     ebook = models.CharField(max_length=255)
-    isbn = models.CharField(max_length=255, unique=True)
+    isbn = models.CharField(max_length=15, unique=True)
     price = models.DecimalField(
         max_digits=10,
         decimal_places=2,
