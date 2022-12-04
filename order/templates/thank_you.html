@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Thank You! - eBook Store
+{% endblock %}
+
+{% block content %}
+<div>
+    <div class="text-center">
+        <br>
+        <br>
+        <h1 class="text-center my_title">
+            Thank you for purchasing
+        </h1>
+        <br>
+        <br>
+        <p>
+            Your order number is: <b>{{ customer_order.id }}</b>
+        </p>
+        <br>
+        <p>
+            We have received your order and the order confirmation has been sent to <b>{{ user.email }}</b> for the eBook you purchased.
+        </p>
+
+        <p>Go to your purchased list now to view downloadable eBooks. Happy reading!</p>
+        <a href="#">
+            <button class="btn btn-success">Download eBook</button>
+        </a>
+    </div>
+</div>
+<br>
+<br>
+{% endblock %}
