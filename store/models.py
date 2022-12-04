@@ -30,7 +30,10 @@ class Ebook(models.Model):
     name = models.CharField(max_length=250)
     author = models.CharField(max_length=100, default=None)
     description = models.TextField(blank=True)
+<<<<<<< HEAD
     # genre = models.ForeignKey(Genre, on_delete=models.CASCADE)
+=======
+>>>>>>> 7fb8e24f7d2557ac69a5270ff8fc3c5fcd892281
     genre = models.ManyToManyField(Genre)
     isbn = models.DecimalField(max_digits=13, decimal_places=0, default=None) # international standard isbn max_digit=13
     price = models.DecimalField(max_digits=10, decimal_places=2)

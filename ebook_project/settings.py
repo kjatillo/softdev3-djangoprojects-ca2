@@ -40,9 +40,11 @@ INSTALLED_APPS = [
     # local
     'accounts',
     'store',
+    'order',
+    'pages',
     # 3rd party
-    # 'crispy_forms',
-    # 'crispy_bootstrap5',
+    'crispy_forms',
+    'crispy_bootstrap5',
 ]
 
 MIDDLEWARE = [

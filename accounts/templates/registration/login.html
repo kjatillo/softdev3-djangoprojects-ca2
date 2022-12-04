@@ -18,14 +18,14 @@
     <div class="row">
         <div class="col-sm-12 col-lg-6 text-center mb-1">
             <br>
-            <h2 class="my_title">New Customer?</h2>
+            <h2 class="my_title">Don't have an account? Sign up now!</h2>
             <br>
             <a href="{% url 'signup' %}" class="btn btn-success">Create New Account</a>
         </div>
         <div class="col-sm-12 col-lg-6 bg-light">
             <div>
                 <br>
-                <h2 class="my_title">Registered Customers Only</h2>
+                <h2 class="my_title">Already have an account? Log in here</h2>
                 <form method="POST">
                     {% csrf_token %}
                     <p>{{ form | crispy }}</p>
