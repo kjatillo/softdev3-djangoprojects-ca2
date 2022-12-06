@@ -11,31 +11,24 @@
 {% endblock %}
 
 {% block content %}
-<div class="container">
-    <br>
-    <h1 class="my_title text-center">Login or Create a New Account</h1>
-    <br>
-    <div class="row">
-        <div class="col-sm-12 col-lg-6 text-center mb-1">
+<div class="row">
+    <div class="col-sm-7">
+        <img src="{% static 'images/login_page_img.jpg' %}" alt="Tablet phone mouse keyboard chart" id="login-img">
+    </div>
+
+    <div class="col-sm-5" id="login-form">
+        <div>
             <br>
-            <h2 class="my_title">Don't have an account? Sign up now!</h2>
+            <h2 class="my_title">Login account</h2>
             <br>
-            <a href="{% url 'signup' %}" class="btn btn-success">Create New Account</a>
-        </div>
-        <div class="col-sm-12 col-lg-6 bg-light">
-            <div>
-                <br>
-                <h2 class="my_title">Already have an account? Log in here</h2>
-                <form method="POST">
-                    {% csrf_token %}
-                    <p>{{ form | crispy }}</p>
-                    <button type="submit" class="btn btn-success">Login</button>
-                </form>
-                <br>
-            </div>
+            <form method="POST">
+                {% csrf_token %}
+                <p>{{ form | crispy }}</p>
+                <button type="submit" class="btn btn-success">Login</button>&ensp;
+                <a href="{% url 'signup' %}" class="btn btn-secondary">Sign Up</a>
+            </form>
+            <br>
         </div>
     </div>
-    <br>
 </div>
-<br>
 {% endblock content %}

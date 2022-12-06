@@ -11,25 +11,33 @@
 {% endblock %}
 
 {% block content %}
-<div>
-    {% if not form.is_valid %}
-    <div class="mx-auto">
-        <br>
-        <h1 class="my_title text-center">Create a new account</h1>
-        <br>
-        <div class="col-sm-9 col-md-6 mx-auto bg-light p-3 my-3 w-50">
-            <br>
-            <p>Enter the following information to create a new account.</p>
-            <form method="POST">
-                <p>
-                    {{ form | crispy }}
-                    {% csrf_token %}
-                </p>
-                <button type="submit" class="btn btn-success">Register Account</button>
-            </form>
-            <br>
+<div class="row">
+    <div class="col-sm-4" id="signup-form">
+        <div>
+            {% if not form.is_valid %}
+            <div>
+                <br>
+                <h1 class="my_title">Create an account</h1>
+                <br>
+                <div>
+                    <br>
+                    <p>Fill in the form to create a new account.</p>
+                    <form method="POST">
+                        <p>
+                            {{ form | crispy }}
+                            {% csrf_token %}
+                        </p>
+                        <button type="submit" class="btn btn-success">Register Account</button>
+                    </form>
+                    <br>
+                </div>
+            </div>
+            {% endif %}
         </div>
     </div>
-    {% endif %}
+
+    <div class="col-sm-8">
+        <img src="{% static 'images/signup_page_img.jpg' %}" alt="Ebook glasses coffee plant watch" id="signup-img">
+    </div>
 </div>
 {% endblock content %}
