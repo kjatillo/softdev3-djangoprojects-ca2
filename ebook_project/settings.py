@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'store',
     'order',
     'pages',
+    'cart',
     # 3rd party
     'crispy_forms',
     'crispy_bootstrap5',
@@ -136,3 +137,6 @@ STATICFILES_FINDERS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'accounts.CustomUser'
+
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
