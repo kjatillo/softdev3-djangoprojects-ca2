@@ -1,7 +1,17 @@
+/* General */
 .my_title {
     font-size: 1em;
     text-transform: uppercase;
     letter-spacing: .2em;
+}
+
+/* Accounts app */
+#login-img {
+    width: 100%;
+}
+
+#signup-img {
+    width: 100%;
 }
 
 /* Header */
@@ -137,5 +147,14 @@ footer, footer i {
     nav #collapsibleNavbar {
         display: flex;
         justify-content: space-between;
+    }
+
+    #login-form {
+        padding-left: 10em;
+        margin-top: 5em;
+    }
+
+    #signup-form {
+        margin-top: 5em;
     }
 }
