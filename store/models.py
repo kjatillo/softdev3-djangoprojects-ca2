@@ -31,7 +31,7 @@ class Ebook(models.Model):
     author = models.CharField(max_length=100, default=None)
     description = models.TextField(blank=True)
     genre = models.ManyToManyField(Genre)
-    isbn = models.PositiveBigIntegerField(unique=True) # international standard isbn max_digit=13
+    isbn = models.CharField(max_length=15) # international standard isbn max_digit=15
     price = models.DecimalField(max_digits=10, decimal_places=2)
     image = models.ImageField(upload_to='media/book', blank=True)
     available = models.BooleanField(default=True)

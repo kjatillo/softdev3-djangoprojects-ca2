@@ -1,0 +1,949 @@
+[
+    {
+        "model": "store.genre",
+        "pk": "3db822e3-9003-4c1d-8c8e-68691396e2dd",
+        "fields": {
+            "name": "Science Fiction",
+            "description": "Science fiction is a genre of literary fiction that aims to creatively represent real or imaginary concepts of science and technology. These concepts can be part of the central theme of the work or the scenarios presented in it. In science fiction novels, the plot is usually set in the future.",
+            "image": "media/genre/science-fiction.jpg"
+        }
+    },
+    {
+        "model": "store.genre",
+        "pk": "94528d58-8af0-4c4a-acdf-d1001965fb7e",
+        "fields": {
+            "name": "Adventure",
+            "description": "Adventure fiction is a genre of literature that features stories of adventure, such as world travel, difficult quests, voyages of discovery, and other journeys. They might involve things like pirates and buried treasure, the search for a secret place or object, or a quest or expedition whose success is crucial for personal or societal reasons",
+            "image": "media/genre/adventure.jpg"
+        }
+    },
+    {
+        "model": "store.genre",
+        "pk": "b901e6e5-921d-4f11-a3c4-3a946eb25d89",
+        "fields": {
+            "name": "Technology",
+            "description": "The use of technology is widely prevalent in medicine, science, industry, communication, transportation, and daily life. Technologies include physical objects like utensils or machines and intangible tools such as software.",
+            "image": "media/genre/Technology.jpg"
+        }
+    },
+    {
+        "model": "store.genre",
+        "pk": "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9",
+        "fields": {
+            "name": "Romance",
+            "description": "Romance is a narrative genre in literature that involves a mysterious, adventurous, or spiritual storyline where the focus is on a quest that involves bravery and strong values, not always a love interest.",
+            "image": "media/genre/romance.jpg"
+        }
+    },
+    {
+        "model": "store.genre",
+        "pk": "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb",
+        "fields": {
+            "name": "Fairy tale",
+            "description": "Fairy tale is a type of short narrative that typically features such folkloric characters, such as fairies, goblins, elves, trolls, dwarves, giants or gnomes, and usually magic or enchantments. However, only a small number of the stories thus designated explicitly refer to fairies.",
+            "image": "media/genre/fairy_tale.jpg"
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "046c9227-16f6-4008-a2aa-9e6cfa4d54c1",
+        "fields": {
+            "name": "Mine To Have (Southern Wedding Series)",
+            "author": "Natasha Madison",
+            "description": "From Wall Street Journal & USA Today bestselling author Natasha Madison comes a small town second chance romance.\r\n\r\nHarlow\r\n\r\nI promised him I would be there for the best day of his life.\r\n\r\nNot thinking I wouldn't be the one standing next to him.\r\n\r\nBut here I was attending the love of my life's wedding day.\r\n\r\nI smiled when I saw him and pushed back the tears that wanted to come out.\r\n\r\nThis was his day and I was going to fulfill my promise.\r\n\r\nTravis\r\n\r\nIt was supposed to be the best day of my life.\r\n\r\nBut the second I got up, things started to fall apart.\r\n\r\nThe kitchen just caught on fire.\r\n\r\nFlowers were from a funeral.\r\n\r\nMy bride-to-be just had an allergic reaction leaving by ambulance.\r\n\r\nOh and my ex-girlfriend just walked into the church.\r\n\r\nThey say you have to see the signs when they are right in front of you.\r\n\r\nMaybe she was just mine to have.",
+            "isbn": "9781990376023",
+            "price": "3.99",
+            "image": "media/book/mine_to_have_southern_wedding_series.jpg",
+            "available": true,
+            "date_added": "2022-12-04T15:00:15.593Z",
+            "updated": "2022-12-04T15:00:15.593Z",
+            "genre": [
+                "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "056923a0-e36f-44b7-837c-14ba3f57a8ce",
+        "fields": {
+            "name": "Assembly Programming:Simple, Short, And Straightforward Way Of Learning Assembly Language",
+            "author": "Sherwyn Allibang",
+            "description": "This book is intended for beginners who would like to learn the basics of Assembly Programming. This book uses Simple words, Short sentences and Straightforward paragraphs. The triple S way to learn Assembly Programming. The topics covered in this book includes a brief introduction to assembly, common arithmetic instructions, character and string input and display routines, flow controls including conditional and looping statements, stack, and procedures. This assembly language book is intended for complete beginners in assembly programming. However, it is assumed that the reader has prior or basic knowledge with other programming language. This book includes screenshots of step by step of how to code, compile, link and run assembly programs. This book is packed with working sample assembly programs and after reading this book, the reader would be able to develop assembly programs based particularly from problems given in computer science courses.",
+            "isbn": "9780463281383",
+            "price": "4.49",
+            "image": "media/book/assembly_programming.jpg",
+            "available": true,
+            "date_added": "2022-12-04T15:14:55.564Z",
+            "updated": "2022-12-04T15:14:55.564Z",
+            "genre": [
+                "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "0d248a68-877f-466c-84c7-47c2f24b80ed",
+        "fields": {
+            "name": "Archangel",
+            "author": "Rick Jones",
+            "description": "In Los Angeles, the niece of an esteemed cardinal of the Vatican is abducted by an Albanian mob. Kimball Hayden, a man without a country or the support of the church, soon finds himself in the crosshairs of an indigenous black-op unit that is trying to terminate him for secrets that could set off a political firestorm. While Kimball fights for survival on two fronts, he bonds with an unlikely savior: Cardinal Gallo, the man who was instrumental in spearheading court-martial proceedings against Kimball Hayden as a Vatican Knight. Together with a small unit of Vatican Knights, Kimball quickly discovers that the man behind the black-op forces is commanded by Shari Cohen's husband, a man with a very dark and sinister past. Lacking in numbers, Kimball must prove himself to the Vatican by overcoming an Albanian team of precision assassins and a sanctioned kill team from the United States government. But most of all, he must confront the man behind it all, the husband of Shari Cohen. Each of the 24 action thriller novels will leave readers gripped. A global television series is currently in development � (Executive Producer) Ileen Maisel",
+            "isbn": "9798201367664",
+            "price": "3.99",
+            "image": "media/book/archangel.jpg",
+            "available": true,
+            "date_added": "2022-12-03T17:08:31.604Z",
+            "updated": "2022-12-03T17:08:31.604Z",
+            "genre": [
+                "94528d58-8af0-4c4a-acdf-d1001965fb7e"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "11c09223-bc48-40eb-8efe-a6f5dffabc68",
+        "fields": {
+            "name": "Ascension",
+            "author": "TurtleMe",
+            "description": "I had to accept that I wasn�t just Arthur Leywin anymore, and that I could no longer be limited by the circumstances of my birth. If I was going to escape, if I was going to go toe-to-toe with the most powerful beings in this world, I needed to push myself to my utmost limit...and then I needed to push even further.\r\n\r\nAfter nearly dying as a victim of his own strength, Arthur Leywin wakes to find himself far from the continent where he was born for the second time. Alone, broken, and with no way to tell his family he�s alive, Arthur must rebuild his strength to survive. As he ascends through an ancient dungeon filled with hostile beasts and devious trials, he discovers an ancient, absolute power - a power that will either ruin him or take him to new heights. But the dungeon won�t give up its knowledge easily. Before he can plunder its depths, Arthur must learn to untangle the threads of fate. He must band together with the unlikeliest of allies if he hopes to escape with his life.",
+            "isbn": "9781005484187",
+            "price": "4.99",
+            "image": "",
+            "available": true,
+            "date_added": "2022-12-04T14:44:13.802Z",
+            "updated": "2022-12-04T14:44:13.802Z",
+            "genre": [
+                "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "1b239db2-0cda-4794-bf85-18d25883e74d",
+        "fields": {
+            "name": "All For This",
+            "author": "Lexi Ryan",
+            "description": "**ALL FOR THIS is book three in the Here and Now series. It is not a stand-alone and it�s intended to be read after LOST IN ME and FALL TO YOU.**\r\n\r\nWhat if you would never remember the day you made the most important decision of your life?\r\n\r\nThat�s what they�re telling me about the day of my accident�the day I put on Max�s ring and chose him over Nate. I�m counting on the wisdom behind a decision I don�t remember making.\r\n\r\nMax is amazing�sexy, sweet, and kind. I was starting to believe happily-ever-after might be in my future after all. Then the unthinkable happened and my world imploded. If I�m going to make this work with Max, I need my missing memories, or at least answers from about those five days before my accident.\r\n\r\nBut what does my future hold if those answers aren�t anything like I imagined?",
+            "isbn": "9781940832951",
+            "price": "4.99",
+            "image": "media/book/all_for_this.jpg",
+            "available": true,
+            "date_added": "2022-12-04T14:55:54.187Z",
+            "updated": "2022-12-04T14:55:54.187Z",
+            "genre": [
+                "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "1b59223a-156c-4da6-bbff-8f2264f8e095",
+        "fields": {
+            "name": "Understanding Computers, Smartphones and the Internet",
+            "author": "Ernie Dainow",
+            "description": "Most introductory books about computers are long, detailed technical books such as those used in a computer science course or else tutorials that provide instructions on how to operate a computer with little description of what happens inside the machine.\r\n\r\nThis book fits in the large gap between these two extremes. It is for people who would like to understand how computers work, without having to learn a lot of technical details. Only the most important things about computers are covered. There is no math except some simple arithmetic. The only prerequisite is knowing how to use a web browser.\r\n\r\nAs an alternative or adjunct to reading the book, you can watch a series of short videos by going to youtube.com and searching for �Understanding Computers, Smartphones and the Internet�.\r\n\r\nOnly current day technology is covered. People who are interested in learning about how computers evolved from the earliest machines can read the companion book �A Concise History of Computers, Smartphones and the Internet�.\r\n\r\nWhile originally intended for people who are not in the computer field, this book is also useful for those taking a coding course or an introductory computer science course. Even people already in the computer field will find things of interest in this book.",
+            "isbn": "9780995214408",
+            "price": "3.95",
+            "image": "media/book/understanding_computers_smartphones_and_the_internet.jpg",
+            "available": true,
+            "date_added": "2022-12-04T15:23:53.969Z",
+            "updated": "2022-12-04T15:23:53.969Z",
+            "genre": [
+                "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "26a9f4a9-e1fa-46a6-8d05-a8db56d57b21",
+        "fields": {
+            "name": "Republic",
+            "author": "Lindsay Buroker",
+            "description": "After the notorious outlaws Amaranthe and Sicarius helped overthrow the corrupt faction controlling the empire and brought in a great war hero to lead the nation to prosperity, they finally earned their pardons�and some time off. A tropical vacation cruising around in a private submarine? Perfect. But their trip is interrupted by a summons from the new president: they're needed back at home. Trouble unlike anything they've ever dealt with threatens to destroy the capital city and throw the fledgling republic into chaos.\r\n\r\nThe follow-up to The Emperor's Edge series, Republic takes place a few months after the events of Forged in Blood I & II. It is a complete 210,000-word novel.",
+            "isbn": "9781310080333",
+            "price": "6.99",
+            "image": "media/book/republic.jpg",
+            "available": true,
+            "date_added": "2022-12-04T15:10:52.437Z",
+            "updated": "2022-12-04T15:10:52.438Z",
+            "genre": [
+                "3db822e3-9003-4c1d-8c8e-68691396e2dd"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "28415f1a-d45e-4d13-8040-df694668268c",
+        "fields": {
+            "name": "Only Bad Options",
+            "author": "Jennifer Estep",
+            "description": "New York Times bestselling author Jennifer Estep blasts off with an exciting new science-fiction fantasy adventure with a dash of historical romance. This action-packed space opera features a mix of magic and technology, along with a soul mates and enemies-to-lovers story. Perfect for fans of Star Wars, Bridgerton, and Pride and Prejudice.\r\n\r\nA WOMAN WHO SEES EVERYTHING . . .\r\n\r\nFew people know the name Vesper Quill. To most folks, I�m just a lowly lab rat who designs brewmakers and other household appliances in the research and development lab at the powerful Kent Corp. But when I point out a design flaw and a safety hazard in the new line of Kent Corp spaceships, everyone knows who I am�and wants to eliminate me.\r\n\r\nI might be a seer with a photographic memory, but I don�t see the trouble headed my way until it�s too late. Suddenly, I�m surrounded by enemies and fighting for my life.\r\n\r\nI don�t think things can get any worse until I meet Kyrion Caldaren, an arrogant Regal lord who insists that we have a connection, one that could be the death of us both.\r\n\r\nA MAN WHO CAN�T FORGET HIS PAST . . .\r\n\r\nThe name Kyrion Caldaren strikes fear in the hearts of people across the Archipelago Galaxy. As the leader of the Arrows, the Imperium�s elite fighting force, I�m used to being a villain, as well as the personal assassin of Lord Callus Holloway. Even the wealthy Regals who live on the planet of Corios are afraid of me.\r\n\r\nBut everything changes when I meet Vesper Quill. I might be a powerful psion with telepathic, telekinetic, and other abilities, but Vesper sees far too many of my secrets.\r\n\r\nThanks to an arcane, unwanted quirk of psionic magic, the two of us are forced to work together to unravel a dangerous conspiracy and outwit the deadly enemies who want to bend us to their will.",
+            "isbn": "9781950076116",
+            "price": "7.99",
+            "image": "media/book/only_bad_options.jpg",
+            "available": true,
+            "date_added": "2022-12-04T15:09:56.723Z",
+            "updated": "2022-12-04T15:09:56.723Z",
+            "genre": [
+                "3db822e3-9003-4c1d-8c8e-68691396e2dd"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "2e3ddbfc-6750-4050-9ff6-ad3c3d2e2f25",
+        "fields": {
+            "name": "No Remorse",
+            "author": "Eric Thomson",
+            "description": "Wanted by their enemies for exposing the Black Sword cabal and faced with the difficult task of rebuilding the Special Operations Division while treason remains rampant, Major Zack Decker and Commander Hera Talyn are stuck in desk jobs. Until, that is, the Coalition and its minions decide to make things very personal. Forced back into the role of field operatives, they discover a plot to destabilize an entire sector and bring it under the iron-fisted control of a Commonwealth government eager to abandon democracy in favor of imperial dreams. Racing against time, and soulless foes, they have one chance to prevent a civil war and rescue someone more precious to Zack Decker than any other living thing in the entire universe: the daughter he hasn't seen for twenty years. Not even the threat of disgrace and imminent death are enough to deter Decker because, as his foes will find out once again, he's still one of the Few�",
+            "isbn": "9781775135531",
+            "price": "4.99",
+            "image": "media/book/no_remorse.jpg",
+            "available": true,
+            "date_added": "2022-12-04T15:08:05.751Z",
+            "updated": "2022-12-04T15:08:05.751Z",
+            "genre": [
+                "3db822e3-9003-4c1d-8c8e-68691396e2dd"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "44a0e761-2e73-4298-a8c5-d7c5ea411df5",
+        "fields": {
+            "name": "Cross the Line",
+            "author": "Julie Johnson",
+            "description": "Phoebe West has been head-over-heels in love with her brother�s best friend for as long as she can remember.\r\n\r\nNot that he�s bothered to notice.\r\n\r\nDespite several mortifying attempts at seduction and a decade�s worth of unrequited pining, nothing Phoebe does seems to make any impact on the man she�s obsessed over since her bra-stuffing days.\r\n\r\nUntil she lands herself in life-threatening danger.\r\n\r\nAfter years working in special forces and private security, Nathaniel �Nate� Knox may be the only man on the planet who can save Phoebe from the enemies closing in. But the deeper he pulls her into his circle of protection, the harder it is to deny the unexplored attraction between them. And if they cross that line dividing platonic friendship from passionate romance�\r\n\r\nPhoebe�s heart will be in as much jeopardy as her life.\r\n\r\nCROSS THE LINE is a comedic contemporary romance about a woman who can�t seem to walk away� and the man who�ll go to any length to keep her safe. It is the second installment of the internationally bestselling BOSTON LOVE STORY series and can be read as a complete standalone. Due to sparks flying, suspenseful moments, steamy scenes, and one sassy heroine, it is recommended to readers ages 17 and up.",
+            "isbn": "9780996510813",
+            "price": "6.99",
+            "image": "media/book/cross_the_line.jpg",
+            "available": true,
+            "date_added": "2022-12-04T14:56:53.048Z",
+            "updated": "2022-12-04T14:56:53.048Z",
+            "genre": [
+                "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "4b43a6a0-dc88-48ed-8d24-2dba7fd6cf11",
+        "fields": {
+            "name": "The Light Prince",
+            "author": "Che Gilson",
+            "description": "A new twist on a classic fairy tale...\r\n\r\nPrincess Aminira of Qadarh is on a quest when she finds herself in the small kingdom of Lagobel. What starts as a resupply stop for her caravan becomes much more when she chances upon the cursed Prince Eadmund. Without emotional and physical gravity, Eadmund finds everything funny, even as he's blowing away on a breeze, sending the court into a panic.\r\n\r\nDespite his limitations, something about him tugs at Aminira's heart. As they grow closer, their affections don't go unnoticed, and the one that cursed him unfurls a new spell that just might end poor Prince Eadmund.\r\n\r\nThe princess already fled her own home to avoid destruction and now, she is faced with a similar decision. Will Princess Aminira stay and fight for her love or flee once again?",
+            "isbn": "9781393509110",
+            "price": "5.99",
+            "image": "media/book/the_light_prince.jpg",
+            "available": true,
+            "date_added": "2022-12-04T14:55:05.634Z",
+            "updated": "2022-12-04T14:55:05.634Z",
+            "genre": [
+                "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "57780fe8-12dd-42f0-9417-89696b3b600b",
+        "fields": {
+            "name": "Conqueror",
+            "author": "Peter Darman",
+            "description": "Protect your family, defend the empire, honour the gods. This is the code you have lived by all your life, Pacorus. Everything you have undertaken has been with those three objectives uppermost in your mind. And now your life�s work is nearly complete. Your family prospers, the empire is safe, and the gods are the indifferent, callous, bloodthirsty deities they have been since the dawn of time. And yet, they can also be generous, even kind. After a wearisome battle to defend your kingdom, they present you with the opportunity to experience one last great adventure, an offer that is almost beyond comprehension. Grasp it with both hands, Pacorus, and ride to war again, this time against the most dangerous enemy the Parthian Empire has ever faced. But you will not be alone, and the ensuing perils and calamities will seem insignificant when compared to the great miracle the gods have gifted you. �Conqueror� is the sixteenth volume in the Parthian Chronicles series and follows on from �Dura�. Maps of the Parthian Empire and Judea in the 1st century BC can be found on the maps page of my website.",
+            "isbn": "9781005868505",
+            "price": "4.80",
+            "image": "",
+            "available": true,
+            "date_added": "2022-12-03T17:13:17.536Z",
+            "updated": "2022-12-03T17:13:17.536Z",
+            "genre": [
+                "94528d58-8af0-4c4a-acdf-d1001965fb7e"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "58084c07-cba3-4ac6-89a7-6569acedef43",
+        "fields": {
+            "name": "Nova Igniter",
+            "author": "Joseph R. Lallo",
+            "description": "The last thing Lex wants is for history to repeat itself.\r\n\r\nHe's clashed with tech-obsessed terrorists, robot hordes, and twisted timelines. He has skills like no one else.\r\n\r\nHe�ll need them.\r\n\r\nTargeted by cyber-attacks and cut off from his allies. Facing threats from his past that are leaking back onto his life. If Lex doesn�t get to the bottom of things, the galaxy�s days are numbered.\r\n\r\nWhen you�ve lived a life like his, the last thing you want is for history to repeat itself.\r\n\r\nLex has teamed up with mad engineers, clashed with technology-obsessed terrorists, and faced murderous robot hordes. He�s even traveled through time. He has skills no one in history has ever had.\r\n\r\nHe�ll need them.\r\n\r\nDevastating cyber-attacks are targeting him. His closest allies are nowhere to be found. Ominous threats from his past seem to be leaking back onto his life. With the help of an off-kilter ship AI and his ex, Lex will have to get to the bottom of it all. If he doesn�t, the galaxy�s days are numbered.\r\n\r\nNova Igniter is the sixth novel in the action-packed Big Sigma series by Joseph R. Lallo.",
+            "isbn": "9780463321539",
+            "price": "4.99",
+            "image": "media/book/nova_igniter.jpg",
+            "available": true,
+            "date_added": "2022-12-04T15:09:11.105Z",
+            "updated": "2022-12-04T15:09:11.105Z",
+            "genre": [
+                "3db822e3-9003-4c1d-8c8e-68691396e2dd"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "5d88b828-9f24-488a-967c-ab75d5d0b185",
+        "fields": {
+            "name": "The Book Club On Waverly Lane",
+            "author": "Rachel Hanna",
+            "description": "Things aren't always what they seem on Waverly Lane...\r\n\r\nAfter moving to the outskirts of Charleston, South Carolina, Shelby Anderson decides to form a book club to get to know her neighbors and build a new life after her old one imploded.\r\n\r\nLittle does she know that the women who show up with homemade cookies and perfectly manicured nails have a whole host of secrets of their own.\r\n\r\nWill her new book club lead to lifelong friendships or put her in the middle of drama she doesn't want or need?\r\n\r\nIf you love funny, Southern women's fiction with maybe a hint of romance thrown in for good measure, you'll adore The Book Club On Waverly Lane!",
+            "isbn": "9798201114367",
+            "price": "6.99",
+            "image": "media/book/the_book_club_on_waverly_lane.jpg",
+            "available": true,
+            "date_added": "2022-12-04T15:03:54.105Z",
+            "updated": "2022-12-04T15:03:54.105Z",
+            "genre": [
+                "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "66327c92-e8d5-4d17-9194-3d6d8eace2b0",
+        "fields": {
+            "name": "Grace",
+            "author": "Megan O'Brien",
+            "description": "As the only daughter of the Knights MC President, Grace Jackson was raised in the life. Her pop would keep her in a protective bubble if he had his way, and her job is less than a dream, but she loves her life and the small town of Hawthorne where she was raised.\r\n\r\nThe moment Ruston King, president of the Royal Bloods, sets eyes on Grace, he�s determined to make the club princess his queen. But first, he�ll need to convince her that he�s worth giving up everything for.\r\n\r\nWhen danger strikes, Ruston will need to prove he can protect more than just her heart.\r\n\r\nThis is the story of Ruston and Grace, the fifth installment in the Ride Series Second Generation.",
+            "isbn": "9781005992408",
+            "price": "3.99",
+            "image": "media/book/grace.jpg",
+            "available": true,
+            "date_added": "2022-12-04T14:59:10.407Z",
+            "updated": "2022-12-04T14:59:10.407Z",
+            "genre": [
+                "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "6ab75677-3061-45b4-8cd0-73f501d0b241",
+        "fields": {
+            "name": "This Is Falling",
+            "author": "Ginger Scott",
+            "description": "First, I had to remember how to breathe. Then, I had to learn how to survive. Two years, three months and sixteen days had passed since I was the Rowe Stanton from before, since tragedy stole my youth and my heart went along with it.\r\n\r\nWhen I left for college, I put a thousand miles between my future and my past. I�d made a choice�I was going to cross back to the other side, to live with the living. I just didn�t know how.\r\n\r\nAnd then I met Nate Preeter.\r\n\r\nAn All-American baseball player, Nate wasn�t supposed to notice a ghost-of-a-girl like me. But he did. He shouldn�t want to know my name. But he did. And when he learned my secret and saw the scars it left behind, he was supposed to run. But he didn�t.\r\n\r\nMy heart was dead, and I was never supposed to belong to anyone. But Nate Preeter had me feeling, and he made me want to be his. He showed me everything I was missing.\r\n\r\nAnd then he showed me how to fall.",
+            "isbn": "9781310983993",
+            "price": "4.99",
+            "image": "media/book/this_is_falling.jpg",
+            "available": true,
+            "date_added": "2022-12-04T15:04:33.735Z",
+            "updated": "2022-12-04T15:04:33.735Z",
+            "genre": [
+                "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "6f77e1ff-b379-4817-94b8-bb27135834e2",
+        "fields": {
+            "name": "The Cold King",
+            "author": "Amber Jaeger",
+            "description": "From the author of The Hemlock Bay Series comes a new retelling of an old tale�\r\n\r\n� Not every Beast is a prince charming at heart and not every Beauty is a maiden just waiting for love�\r\n\r\nCalia Thorn has lived her entire life in a small town sheltered by the Cold King�s mountain. Working day and night to care for her younger siblings, complete her unending chores and please her selfish, lazy mother has left her with few dreams for her own future.\r\n\r\nBut then even those meager hopes are taken from her when the Cold King comes down from his mountain to demand a new servant. Ungraceful, unladylike, undesired and unwanted by even her own family, Calia is chosen to be sent to the palace.\r\n\r\nThe Cold King has lived for three hundred years under a curse imposed by his own father. With no hope of ever breaking it, he settles for keeping his heart frozen against any pain� or hope.\r\n\r\nWhen his new servant arrives, she challenges him in ways no one ever has and sparks fly. But not every Beast is a prince charming at heart and not every beauty is a maiden just waiting for love.\r\n\r\nSometimes happily ever after isn�t so easy�\r\n\r\nThe Cold King is a dark retelling of Beauty and the Beast.",
+            "isbn": "9781301473700",
+            "price": "4.99",
+            "image": "",
+            "available": true,
+            "date_added": "2022-12-04T14:54:08.410Z",
+            "updated": "2022-12-04T14:54:08.410Z",
+            "genre": [
+                "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "6f8e1a86-1e9a-44bd-8705-37cc25cfc834",
+        "fields": {
+            "name": "Easy React Js for Beginner Developers",
+            "author": "Ibas Majid",
+            "description": "It is no doubt that React JS is one of the highly in-demand web skills at the moment. This makes it a necessity for you as a developer to add it on your resume� if you are aiming to create modern real-world web applications.\r\n\r\nIn this book, we have you covered.\r\n\r\nYou will not only learn the React fundamentals, but you will also be able to create modern React applications and deploy them on the internet for free.\r\nThis will also place you in a position to start working on a web application that is built on React. A very good example is the Gatsby site which is a static site generator and a platform most developers are now shifting to. Also, if you are the WordPress person, the block editor often called Gutenberg is built on React. So you don�t have a choice than to learn this library if you aim to become a better WordPress theme developer.\r\nMore so, this book covers some other important topics that will make creating and deploying a React app on the web a breeze.\r\n\r\nSome of these include the NPM version control with Git, selecting and installing the right text editor for your project and many more.\r\n\r\nIn addition to the core React knowledge, this edition covers the React Hooks. You�ll learn what they are and how you can apply them in your project.\r\n\r\nSo if you like detailed and visual writing guides, plenty of tasks to be executed, then you�ll love this React book.\r\n\r\nGo ahead and read carefully, you�ll be happy reading it.\r\n\r\nI guarantee it!",
+            "isbn": "9781005509521",
+            "price": "9.99",
+            "image": "media/book/easy_react_js_for_beginner_developers.jpg",
+            "available": true,
+            "date_added": "2022-12-04T15:18:39.869Z",
+            "updated": "2022-12-04T15:18:39.869Z",
+            "genre": [
+                "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "70ab3218-dc16-4dbb-b790-372512d11b1e",
+        "fields": {
+            "name": "Empires of Bronze: The Dark Earth (Empires of Bronze #6)",
+            "author": "Gordon Doherty",
+            "description": "The time will come, as all times must, when the world will shake, and fall to dust� 1237 BC: It is an age of panic. The great empires are in disarray � ravaged by endless drought, shaken by ferocious earthquakes, and starved of precious tin. Some say the Gods have abandoned mankind.\r\nWhen Tudha ascends the Hittite throne, the burden of stabilizing the realm falls upon his shoulders. Despite his valiant endeavors, things continue to disintegrate; allies become foes, lethal plots arise, and enemy battle horns echo across Hittite lands. Yet this is nothing compared to the colossal, insidious shadow emerging from the west. Crawling unseen towards Tudha�s collapsing Hittite world comes a force unlike any ever witnessed; an immeasurable swarm of outlanders, driven by the cruel whip of nature, spreading fire and destruction: the Sea Peoples. Every age must end. The measure of a man is how he chooses to face it.",
+            "isbn": "9781005313418",
+            "price": "4.99",
+            "image": "media/book/empires_of_bronze_the_dark_Earth.jpg",
+            "available": true,
+            "date_added": "2022-12-03T17:14:59.497Z",
+            "updated": "2022-12-03T17:14:59.497Z",
+            "genre": [
+                "94528d58-8af0-4c4a-acdf-d1001965fb7e"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "714f5354-ffec-42a9-91a8-c49cd8edb150",
+        "fields": {
+            "name": "The Postman",
+            "author": "David Brin",
+            "description": "He was a survivor�a wanderer who traded tales for food and shelter in the dark and savage aftermath of a devastating war.\r\n\r\nFate touches him one chill winter�s day when he borrows the jacket of a long-dead postal worker to protect himself from the cold. The old, worn uniform still has power as a symbol of hope, and with it he begins to weave his greatest tale, of a nation on the road to recovery.\r\n\r\nThis is the story of a lie that became the most powerful kind of truth. A timeless novel as urgently compelling as War Day or Alas, Babylon, David Brin�s The Postman is the dramatically moving saga of a man who rekindled the spirit of America through the power of a dream, from a modern master of science fiction.\r\n\r\n�The Postman will keep you engrossed until you�ve finished the last page.��Chicago Tribune",
+            "isbn": "9781005786502",
+            "price": "5.99",
+            "image": "media/book/the_postman.jpg",
+            "available": true,
+            "date_added": "2022-12-04T14:41:48.858Z",
+            "updated": "2022-12-04T14:41:48.858Z",
+            "genre": [
+                "94528d58-8af0-4c4a-acdf-d1001965fb7e"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "746b5baf-f9a4-424d-b5a2-cc89f948b0e2",
+        "fields": {
+            "name": "Sealed With a Kiss: A Small Town Christmas Romance",
+            "author": "Leeanna Morgan",
+            "description": "John Fletcher is used to living his life on the edge. He�s an ex-Navy SEAL and the owner of one of the most successful security companies in the world. When his daughter asks for the one thing he can�t give her, it breaks his heart.\r\n\r\nRachel McReedy isn�t impressed with John Fletcher�s money, fast cars or jet-setting lifestyle. What she cares about is Bella, his eight-year-old daughter. She might not have had the type of life Bella has, but she knows what it�s like to be left on her own. Rachel is determined to show John the error of his ways, but she isn�t prepared for what she�s about to find.\r\n\r\nDiscover the magic of Emerald Lake in the first book in the Emerald Lake Billionaires series. All of Leeanna's series are linked. If you find a character you like in one book you could find them in another story. Happy reading!",
+            "isbn": "9780994119070",
+            "price": "4.99",
+            "image": "media/book/sealed_with_a_kiss_a_small_town_christmas_romance.jpg",
+            "available": true,
+            "date_added": "2022-12-04T15:02:12.627Z",
+            "updated": "2022-12-04T15:02:12.627Z",
+            "genre": [
+                "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "751171c6-7f6e-49d6-90bf-ea09cd765dd5",
+        "fields": {
+            "name": "Crafting Interpreters",
+            "author": "Robert Nystrom",
+            "description": "Despite using them every day, most software engineers know little about how programming languages are designed and implemented. For many, their only experience with that corner of computer science was a terrifying \"compilers\" class that they suffered through in undergrad and tried to blot from their memory as soon as they had scribbled their last NFA to DFA conversion on the final exam.\r\n\r\nThat fearsome reputation belies a field that is rich with useful techniques and not so difficult as some of its practitioners might have you believe. A better understanding of how programming languages are built will make you a stronger software engineer and teach you concepts and data structures you'll use the rest of your coding days. You might even have fun.\r\n\r\nThis book teaches you everything you need to know to implement a full-featured, efficient scripting language. You'll learn both high-level concepts around parsing and semantics and gritty details like bytecode representation and garbage collection. Your brain will light up with new ideas, and your hands will get dirty and calloused.\r\n\r\nStarting from main(), you will build a language that features rich syntax, dynamic typing, garbage collection, lexical scope, first-class functions, closures, classes, and inheritance. All packed into a few thousand lines of clean, fast code that you thoroughly understand because you wrote each one yourself.",
+            "isbn": "9780990582946",
+            "price": "39.95",
+            "image": "media/book/crafting_interpreters.jpg",
+            "available": true,
+            "date_added": "2022-12-04T15:17:58.983Z",
+            "updated": "2022-12-04T15:17:58.983Z",
+            "genre": [
+                "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "762f1a5c-e989-46a5-be23-6f80dd385365",
+        "fields": {
+            "name": "Beginning SwiftUI",
+            "author": "Greg Lim",
+            "description": "In this book, we take you on a fun, hands-on and pragmatic journey to learning iOS 14 development using SwiftUI. You'll start building your first SwiftUI app within minutes. Every section is written in a bite-sized manner and straight to the point as I don�t want to waste your time (and most certainly mine) on the content you don't need. In the end, you will have the skills to create an app and submit it to the app store.\r\n\r\nIn the course of this book, we will cover:\r\n\r\nChapter 1: Introduction\r\nChapter 2: Body Mass Index Calculator\r\nChapter 3: To Do List App Using List\r\nChapter 4: Persistent Data Using Core Data\r\nChapter 5: Extending Core Data to CloudKit\r\nChapter 6: Getting Data from an API: GitHub Users\r\nChapter 7: Machine Learning with Core ML\r\nChapter 8: C.R.U.D. Notes App with Firebase/Firestore\r\nChapter 9: Building Cross Platform Apps in SwiftUI\r\n\r\nThe goal of this book is to teach you SwiftUI development in a manageable way without overwhelming you. We focus only on the essentials and cover the material in a hands-on practice manner for you to code along.",
+            "isbn": "9789811811197",
+            "price": "9.99",
+            "image": "media/book/beginning_swiftui.jpg",
+            "available": true,
+            "date_added": "2022-12-04T15:16:58.764Z",
+            "updated": "2022-12-04T15:16:58.764Z",
+            "genre": [
+                "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "79ece5b5-dccb-48c9-98d1-1ec0a70dba3f",
+        "fields": {
+            "name": "Seabreeze Wedding",
+            "author": "Jan Moran",
+            "description": "The high summer season. A long-awaited wedding. Surprises at a historic beach inn.\r\n**From a USA Today bestselling author**\r\n\r\nAt the historic Seabreeze Inn, a summer beach wedding has sisters Ivy and Shelly Bay busier than ever with wedding plans. New guests arrive for the high summer season, bringing with them fresh challenges. As Ivy prepares the old beach house for a family wedding, surprising discoveries from decades past arise once again. Read Seabreeze Wedding as a standalone or as part of the beloved Summer Beach series. RSVP now and join the party.",
+            "isbn": "9781647780289",
+            "price": "5.99",
+            "image": "",
+            "available": true,
+            "date_added": "2022-12-04T15:01:05.952Z",
+            "updated": "2022-12-04T15:01:05.952Z",
+            "genre": [
+                "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "7b6c0021-79c8-4c30-a4d7-878374ca6ccd",
+        "fields": {
+            "name": "Crank Palace - A Maze Runner Novella",
+            "author": "James Dashner",
+            "description": "Newt has been to hell and back with his friends.\r\n\r\nThe Glade. The Maze. The Scorch. The inner halls of WICKED. But now he has a burden that can�t be shared with Thomas and the others�the Flare. And Newt can�t bear the thought of his friends watching him descend into madness as he succumbs to the virus.\r\n\r\nLeaving only a note, Newt departs the Berg before the Gladers return from their mission into Denver, Colorado. From there, he experiences the gritty nightmare of life on the streets, running from the infected and those hunting them, until he ends up in the Crank Palace, the last dumping ground of those without hope. Although Newt thought he was running away from his friends to save them from himself, along the way he meets a young mother named Keisha and her son, Dante, who end up saving Newt in a way he could never have imagined.\r\n\r\nTaking place during the latter events of The Death Cure, Crank Palace tells the story of Newt like never before, from inside his own mind, as he searches for meaning in a life gone horribly wrong. He will try to fulfill a new-found destiny before his path leads to its inevitable conclusion�and one last meeting with his best friend.",
+            "isbn": "9781626015661",
+            "price": "6.99",
+            "image": "media/book/cranck_palace.jpg",
+            "available": true,
+            "date_added": "2022-12-04T15:05:20.212Z",
+            "updated": "2022-12-04T15:05:20.212Z",
+            "genre": [
+                "3db822e3-9003-4c1d-8c8e-68691396e2dd"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "82a92e38-aa6c-40a6-9749-33a887bf7571",
+        "fields": {
+            "name": "Fractured",
+            "author": "Sydney Landon",
+            "description": "Lucian and Lia attempt to deal with the aftermath of the violent attack on her by her stepfather. As events unfold in their lives, Lia finds that she can no longer be patient with the man that she loves, because his secrets are tearing them apart.\r\n\r\nLucian cannot deny the fact that he's fallen in love with the brave and beautiful woman who has lived a life of horror. He wants nothing more than to protect her, but soon realizes that he may be the person who will hurt her the most.\r\n\r\nTo be together, they'll have to fight demons from their pasts that threaten to tear them apart.\r\n\r\nThis book is meant for mature readers who are 18+. It contains explicit language, and graphic sexual content.\r\n\r\n**Book 2 of the Lucian & Lia Trilogy.**",
+            "isbn": "9781310171895",
+            "price": "3.99",
+            "image": "media/book/fractured.jpg",
+            "available": true,
+            "date_added": "2022-12-04T14:58:30.497Z",
+            "updated": "2022-12-04T14:58:30.497Z",
+            "genre": [
+                "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "850b17a5-03e1-4d24-9c74-835a7c5d47a9",
+        "fields": {
+            "name": "Forged in Flames (Made of Steel Series Book 2)",
+            "author": "Ivy Smoak",
+            "description": "It's hard to be consumed by revenge when my heart feels like it's breaking in two. A part of me is still in love with Miles. I think I always will be. He embodies everything I thought my life could be. Every hope and dream and wish. But I'm not the girl that he remembers.\r\n\r\nAnd I'd be lying if I said I haven't started to fall for the New York City vigilante. He's the only other person that knows what it's like to live behind a mask. There's a darkness in him that mirrors my own. He embraces my broken soul.\r\n\r\nBut I'm tired of all the secrets, masks, and lies. I don't need a man to save me. I'm the superhero of my own story. And all I need to focus on right now is Don Roberts - a monster far worse than I ever imagined - before he unleashes the mafia on this city and ruins any chance I have at a new life.",
+            "isbn": "9781370470648",
+            "price": "6.99",
+            "image": "media/book/forged_in_flames_made_of_steel_series_book_2.jpg",
+            "available": true,
+            "date_added": "2022-12-04T14:57:43.330Z",
+            "updated": "2022-12-04T14:57:43.330Z",
+            "genre": [
+                "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "89eab499-22a4-4045-9ca3-1eb890cd6f5d",
+        "fields": {
+            "name": "Outcast",
+            "author": "Peter Darman",
+            "description": "Leon Muller, resident of the city of Bern, has it all � a wealthy family, an excellent education and a very bright future. But he throws it all away on a rash impulse and as a result is thrown into a world that is totally alien to him. Cast out of his home city, he is forced to join an army of impoverished, half-starved soldiers that is fighting for the freedom of the Swiss people. Derided as �alpine shepherds� by their aristocratic enemies, Leon and his comrades are plunged into a life-and-death struggle as the nobles and armies of the Holy Roman Empire and the Austrian Habsburgs circle the Swiss Confederation like ravenous wolves, united in their determination to wipe out the Swiss nation once and for all. It is a war of no quarter and great butchery. �Outcast� is the first volume in the �Alpine Warrior� series � the story of Swiss soldier Leon Muller in the wars of the 15th Century when Europe was torn apart by civil, dynastic and imperial conflicts. Maps of 15th Century Switzerland and the Rhine Valley are available to view and download on the maps page of my website.",
+            "isbn": "9781005521936",
+            "price": "4.90",
+            "image": "media/book/outcast.jpg",
+            "available": true,
+            "date_added": "2022-12-04T14:37:05.375Z",
+            "updated": "2022-12-04T14:37:05.375Z",
+            "genre": [
+                "94528d58-8af0-4c4a-acdf-d1001965fb7e"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "8f7306d0-8611-4e97-a853-0694b41ae96a",
+        "fields": {
+            "name": "Heroines of Avalon and Other Tales",
+            "author": "Ayn Cates Sullivan",
+            "description": "Heroines of Avalon & Other Tales is a gripping narrative, a collection of powerful mythical women. Ayn Cates Sullivan combines her storytelling craft with research to provide readers with great entertainment. Each story includes symbolism, a spirituality developed around the deity, and poems evoking a spiritual atmosphere linked to the character. The stories transport readers into the time of legend and revisits deities and legendary female characters linked to Welsh and British mythology. In this book, the author's research into the myth of the Holy Grail creates beautiful mythical encounters, bringing to life �untold� stories of characters like the Goddess Arianrhod, Blodeuweddi, Iouga, Elen, also known as �Elen of the Ways,� and the Goddess of Sovereignty, Elaine and Dindraine in the Arthurian female Grail Knights.The stories begin with an informative commentary that shares the author�s personal journey and offers elements of myth and the culture around which these characters evolved. The reader will understand the feminine visage of God and the role of some of the heroic women in the lives and history of legendary heroes like Arthur. The literary allusions are manifold in this narrative, and they feature the Lady of the Lake, Morte D�Arthur, and the Arthurian Round Table. One understands the role of women in British mythology and that brave kings were nothing without them: �A king must connect to the spirit of the land through a woman.\" The author reminds us that any nation or tribe that remembers and re-tells the stories of their people carry a torch of light and insight that continues to pass hope from one generation to the next. This is a book that invites wholeness and peace.",
+            "isbn": "9781947925175",
+            "price": "5.99",
+            "image": "media/book/heroines_of_avalon_and_other_tales.jpg",
+            "available": true,
+            "date_added": "2022-12-04T14:45:01.267Z",
+            "updated": "2022-12-04T14:45:01.267Z",
+            "genre": [
+                "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "90791084-a176-499b-ac5d-8ea9e04783f1",
+        "fields": {
+            "name": "Endurance: The Complete Series",
+            "author": "A. C. Spahn",
+            "description": "USA Today Bestseller!\r\n\r\nA disrespected ship, exiled to lonely patrol in the dark corners of the solar system.\r\nA crew of screw-ups, written off by the entire fleet.\r\nThey're about to change everything.\r\nIf they don't blow themselves up first.\r\n\r\nJoin the Endurance's crew - a trigger-happy first officer, a hyperactive engineer, a shy covert operative, a conspiracy-spouting physicist, and a captain trying to earn his way back into his superiors' good graces - as they explore the galaxy by accident and trip their way into saving the world.\r\n\r\nThis anthology includes all five Endurance novellas, as well as two bonus short stories.",
+            "isbn": "9780463379257",
+            "price": "3.99",
+            "image": "media/book/edurance.jpg",
+            "available": true,
+            "date_added": "2022-12-04T15:06:04.533Z",
+            "updated": "2022-12-04T15:06:04.533Z",
+            "genre": [
+                "3db822e3-9003-4c1d-8c8e-68691396e2dd"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "93bbba90-9627-4ec3-a845-e1c1fbe112c3",
+        "fields": {
+            "name": "Never Back Down",
+            "author": "Susan Harris",
+            "description": "Never. Back. Down.\r\n\r\nSince the day that she was abandoned on the shores of Valhalla, and fought her way to be the fiercest Valkyrie, Erika has lived by those three words. There has never been a challenge Erika has backed down from; apart from Loki. But when Erika embeds herself in a supernatural fight club in the hopes that she can weed out Odin's location, Erika will be put to the test. And when love and loyalty cause confusion, can this battle-hardened warrior finally let her guard down enough to see what's been in front of her all along?\r\n\r\nLoki knew the moment he clapped eyes on the beautiful warrior that she was meant for him. However, the Norse God of mischief hides a secret; he was once cursed and has shied away from his feelings to shield himself from hurt. Can he convince Erika that he's the one meant for her, will he be forced to watch the woman he wants for himself spiral out of control?\r\n\r\nNEVER BACK DOWN is the fifth book in the Ever Chace Chronicles.",
+            "isbn": "9781634223256",
+            "price": "4.99",
+            "image": "media/book/never_back_down.jpg",
+            "available": true,
+            "date_added": "2022-12-04T14:50:13.799Z",
+            "updated": "2022-12-04T14:50:13.799Z",
+            "genre": [
+                "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "957100dd-8aa2-4972-a56e-e376864b8ec3",
+        "fields": {
+            "name": "English Knight",
+            "author": "Griff Hosker",
+            "description": "The throne of England is slipping from King Henry�s grasp. His only son has drowned in the English Channel and the predators are gathering ready to devour both England and Normandy. When the last of King Harold�s Housecarls returns to England to die he brings with him a reluctant hero who will save the kingdom. Alfred, son of Ridley, is the first of a new breed, he is an English Knight. The novel is set in a time when warlords fight for small parcels of land and treachery is the order of the day. English Knight is a fast moving novel set in that most turbulent of times, The Anarchy. Filled with action and battles this is the first in a series of chronicles painting a picture of a bloody time in English history when the only people you could rely on were your household warriors and you slept with a dagger beneath your bed.",
+            "isbn": "9781310183386",
+            "price": "5.99",
+            "image": "media/book/english_knight.jpg",
+            "available": true,
+            "date_added": "2022-12-03T17:16:24.325Z",
+            "updated": "2022-12-03T17:16:24.325Z",
+            "genre": [
+                "94528d58-8af0-4c4a-acdf-d1001965fb7e"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "9b3bd834-c06e-4cd7-bdc3-8bf17524675c",
+        "fields": {
+            "name": "Summertime Forgiveness",
+            "author": "Kimberly Thomas",
+            "description": "Losing a loved one is hard� losing three is heart shattering. Within less than a year, Josephine has lost the three most important men in her life in two separate accidents. How does one come back from a hurt that grips you so tightly that it's hard to even breathe? When her estranged father leaves a will naming her and her sisters the sole heirs of the inn and restaurant in Oak Harbor, Jo finds herself putting her pride aside and heading back to the one place she'd vowed never to return. Josephine is finally finding her way after being lost for so long, but when secrets that should have been buried start resurfacing, she runs the risk of losing the most important person in her life. She now realizes the life she's hanging onto is about to become shattered into pieces. She's found her footing with her once estranged sisters, but one wrong word is all it could take to topple this fragile bond. Add in a terminally ill mother and you can understand why she's hesitant to give in to the beginning of a new love. Will the loss and fragility of her relationships be too much for Josephine to bear or can she open her heart to an enduring love?",
+            "isbn": "9781393939108",
+            "price": "3.99",
+            "image": "media/book/summertime_forgiveness.jpg",
+            "available": true,
+            "date_added": "2022-12-04T14:39:21.967Z",
+            "updated": "2022-12-04T14:39:21.967Z",
+            "genre": [
+                "94528d58-8af0-4c4a-acdf-d1001965fb7e"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "a657f1ff-748e-42c2-953a-efeeb7882756",
+        "fields": {
+            "name": "Olde Robin Hood",
+            "author": "Kate Danley",
+            "description": "\"Rich prose, intense action, historical and mythological depth, and captivating innovations.\" -Kirkus Reviews\r\n\r\nExiled for an unjust crime and forced to use whatever means necessary to survive, a figure of hope emerges from Sherwood Forest. But what most people know about Robin Hood (the enemy of Prince John and nobleman loyal to King Richard) was an invention of a playwright nearly three hundred years after Robin Hood died. However, there are older stories about the real Robin Hood.\r\n\r\nUSA Today bestselling author Kate Danley weaves the original 13th century ballads, Robin Hood traditions passed down through ancient pagan rites, and historical evidence together into a noblebright epic. Enter a world of adventure and chivalry as you discover the man behind the myth, as you meet the Olde Robin Hood.",
+            "isbn": "9781386917601",
+            "price": "6.99",
+            "image": "media/book/olde_robin_hood.jpg",
+            "available": true,
+            "date_added": "2022-12-04T14:52:13.050Z",
+            "updated": "2022-12-04T14:52:13.050Z",
+            "genre": [
+                "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "abe41ed1-1830-468e-9cfd-a15e5ceb29fc",
+        "fields": {
+            "name": "Spinward Fringe Broadcast 11: Revenge",
+            "author": "Randolph Lalonde",
+            "description": "Alice continues her training at the new Haven Fleet Academy and the curriculum is only getting harder. When the news that her father's ship, the Revenge, has gone missing reaches her, she is confronted with the terrible reality of the war raging around them. With resources already stretched to their limit and relations with allies strained, Haven Fleet must assemble a small force to search behind enemy lines. The war increases in intensity as enemy territory grows, new allies present themselves and the greatest interplanetary war humanity has ever faced grinds on.",
+            "isbn": "9781988175072",
+            "price": "2.99",
+            "image": "media/book/spinward_fringe_broadcast_11.jpg",
+            "available": true,
+            "date_added": "2022-12-04T15:11:43.555Z",
+            "updated": "2022-12-04T15:11:43.555Z",
+            "genre": [
+                "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb",
+                "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9",
+                "3db822e3-9003-4c1d-8c8e-68691396e2dd"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "ae2d5aef-3b99-4d38-9983-0a4297b60280",
+        "fields": {
+            "name": "Marius' Mules XII: Sands of Egypt",
+            "author": "S.J.A. Turney",
+            "description": "Winter, 48 BC. Caesar and his small force are trapped in the Egyptian city of Alexandria. Caught up in the dynastic struggles of the House of Ptolemy, the consul has sided with the clever and ruthless Queen Cleopatra. Her brother and fellow monarch Ptolemy XIII languishes in the palace, a hostage of Caesar�s, while a huge army under the command of the Egyptian general Achillas closes on the city to free him. With both the future of this ancient land and the safety of Caesar and his men at stake, Fronto and his friends face the terrible task of holding an unfamiliar city under siege, in the desperate hope that reinforcements will reach them before the enemy break in. But Egyptian reinforcements gather too, and with the interference of the youngest princess, Arsino�, the future is far from written. Trapped, besieged and outnumbered, time is running out for the Romans, as shadows loom across the sands of Egypt",
+            "isbn": "9780463655368",
+            "price": "5.49",
+            "image": "",
+            "available": true,
+            "date_added": "2022-12-03T17:17:45.217Z",
+            "updated": "2022-12-03T17:17:45.217Z",
+            "genre": [
+                "94528d58-8af0-4c4a-acdf-d1001965fb7e"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "bf4fffaf-4594-4431-acff-1b1789c61c94",
+        "fields": {
+            "name": "Game Programming Patterns",
+            "author": "Robert Nystrom",
+            "description": "The biggest challenge facing many game programmers is completing their game. Most game projects fizzle out, overwhelmed by the complexity of their own code. Game Programming Patterns tackles that exact problem. Based on years of experience in shipped AAA titles, this book collects proven patterns to untangle and optimize your game, organized as independent recipes so you can pick just the patterns you need.\r\n\r\nYou will learn how to write a robust game loop, how to organize your entities using components, and take advantage of the CPUs cache to improve your performance. You'll dive deep into how scripting engines encode behavior, how quadtrees and other spatial partitions optimize your engine, and how other classic design patterns can be used in games.",
+            "isbn": "9780990582915",
+            "price": "24.95",
+            "image": "media/book/game_programming_patterns.jpg",
+            "available": true,
+            "date_added": "2022-12-04T15:19:30.359Z",
+            "updated": "2022-12-04T15:19:30.359Z",
+            "genre": [
+                "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "cf7d4fc0-e534-446f-8d66-be2bce933571",
+        "fields": {
+            "name": "The Brotherhood of the Rose: An Espionage Thriller",
+            "author": "Kimberly Thomas",
+            "description": "Losing a loved one is hard� losing three is heart shattering. Within less than a year, Josephine has lost the three most important men in her life in two separate accidents. How does one come back from a hurt that grips you so tightly that it's hard to even breathe? When her estranged father leaves a will naming her and her sisters the sole heirs of the inn and restaurant in Oak Harbor, Jo finds herself putting her pride aside and heading back to the one place she'd vowed never to return. Josephine is finally finding her way after being lost for so long, but when secrets that should have been buried start resurfacing, she runs the risk of losing the most important person in her life. She now realizes the life she's hanging onto is about to become shattered into pieces. She's found her footing with her once estranged sisters, but one wrong word is all it could take to topple this fragile bond. Add in a terminally ill mother and you can understand why she's hesitant to give in to the beginning of a new love. Will the loss and fragility of her relationships be too much for Josephine to bear or can she open her heart to an enduring love? Lose yourself in this new women's fiction series that includes friendship, love, and loss among the Hamilton family & friends. A heartwarming cast of characters that has the backdrop of Oak Harbor's coastal serene landscapes and crystal blue waters.",
+            "isbn": "9781393939108",
+            "price": "3.99",
+            "image": "",
+            "available": true,
+            "date_added": "2022-12-04T14:40:29.889Z",
+            "updated": "2022-12-04T14:40:29.889Z",
+            "genre": [
+                "94528d58-8af0-4c4a-acdf-d1001965fb7e"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "d3491037-039b-4a8e-a77a-e4bf897dccf2",
+        "fields": {
+            "name": "Exigency",
+            "author": "Michael Siemsen",
+            "description": "\"A highly recommended, character-driven sci-fi novel in the tradition of Robert A. Heinlein.\" -Kirkus Reviews\r\n\r\nNine brilliant scientists travel light years on a one-way trip to an Earth-like planet. Their mission is to study from orbit the two species of intelligent lifeforms on the surface. The first: an isolated people embarking on civilization and building their world's first city. The second: a brutal race of massive predators, spread thick and still growing across the dominant landmass--destined to breed and eat their way to extinction within a few centuries.\r\n\r\nAfter eight years of observation, disaster strikes the orbiting station and only two crewmembers eject successfully. Drifting down through a dark alien sky, the pair realizes their escape pod launched not toward the safety of the city, but to the other side of the planet, touching down deep inside a land no human could possibly survive.",
+            "isbn": "9781940757216",
+            "price": "4.99",
+            "image": "media/book/exigency.jpg",
+            "available": true,
+            "date_added": "2022-12-04T15:06:48.213Z",
+            "updated": "2022-12-04T15:06:48.213Z",
+            "genre": [
+                "3db822e3-9003-4c1d-8c8e-68691396e2dd"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "d786382d-2063-4f10-b95a-70d15b786aba",
+        "fields": {
+            "name": "Luck of the MacKays",
+            "author": "Kate Danley",
+            "description": "Will the luck of the Irish be with Maggie and Killian as a leprechaun runs loose in Los Angeles? And do the riddles he tells speak of a greater power threatening to ruin St. Patrick's Day? No use crying over spilled green beer. Maggie and Killian are here to save the day!\r\n\r\nMaggie MacKay Holiday Specials are novellas that stand alone and can be read no matter where you are in the Maggie MacKay Magical Tracker series.",
+            "isbn": "9781393447016",
+            "price": "1.99",
+            "image": "media/book/luck_of_the_mackays.jpg",
+            "available": true,
+            "date_added": "2022-12-04T14:49:28.722Z",
+            "updated": "2022-12-04T14:49:28.722Z",
+            "genre": [
+                "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "d8765b5e-e838-4e7a-9d29-50a4c8c22a29",
+        "fields": {
+            "name": "Rapid Java Web Development",
+            "author": "Javier Paniza",
+            "description": "Developing Web Applications has never been easier with the new generation Java open source tools. You'll be amazed at how fast you can have a ready-for-production AJAX web application up and running from scratch.\r\n\r\nIn this book you'll learn OpenXava, JPA, Eclipse, PostgreSQL, JUnit, HtmlUnit, Hibernate Validator framework, Liferay, etc. More importantly, you're going to learn techniques to solve both common and advanced cases that you'll face developing business applications.\r\n\r\nThe book starts with an overview of OpenXava framework, JPA technology and Java annotations. Then it walks readers through the creation of an Invoicing application using Eclipse, Tomcat and PostgreSQL. This application will evolve, adding complex domain model with inheritance, business logic, creation of custom hibernate validator, calling REST web services, automated testing with HtmlUnit, navigation and security by means of Liferay portal, etc.",
+            "isbn": "9781458113504",
+            "price": "19.99",
+            "image": "media/book/rapid_java_web_development.jpg",
+            "available": true,
+            "date_added": "2022-12-04T15:21:11.795Z",
+            "updated": "2022-12-04T15:21:11.795Z",
+            "genre": [
+                "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "de91e395-b246-4a91-9aff-690c745ae037",
+        "fields": {
+            "name": "Legends of the Grail: Stories of Celtic Goddesses",
+            "author": "Ayn Cates Sullivan",
+            "description": "In her book Legends of the Grail, author Ayn Cates Sullivan takes the reader on a journey of discovery, uncovering the fascinating details of some of Ireland�s most famous Goddesses. Throughout history, some of these legendary figures were seen in a negative light, making them appear cruel and unjust. However, the author has retold their stories in this book and the reader is given a different insight into the misunderstood myths surrounding these famous goddesses. Each chapter starts with an introduction to a particular goddess and then a story or legend that is associated with her. In an interesting twist, the author has chosen to tell each story from the point of view of the goddess, which is rare and allows the reader to really explore these legends in a new way. Many times these stories are told from the point of view of the human who saw a glimpse of light in the distance, or a shift in the shadows at night and claimed it was a goddess approaching. However, in this book the reader is able to open up a whole new world as these stories are told in a way that explains their supernatural occurrences while at the same time being easily relatable. In addition, each chapter contains information about what represents each goddess including colors, plants, and animals. This adds to the idea that each of these goddesses can be seen, felt, or heard anytime we happen to be walking through the woods or strolling by a bubbling stream. Some of the goddesses that were misunderstood include a solar goddess by the name of Aine, who in myths was shown to be a bad and disrespectful wife of King Ailill. However, when author Ayn Cates Sullivan shines some light on this particular myth she reveals that in fact Aine just held her freedom and independence above all else, which are admirable qualities. She uses this freedom and independence to be available when someone calls her that needs a light in their lives. After all she was a solar goddess and wanted to make sure she was there to help anyone who was in need of her help. Then there was the goddess Cailleach who would many times disguise herself as an old woman, or a terrible giantess who would throw boulders out of her apron pockets. In reality, she was adamant about protecting the land, animals, and plants, for she had a deep love of nature, and would only punish those who disrespected it. Meditations and visualizations are offered to allow intimate contact with the Goddess herself. The author includes personal practical suggestions for utilizing the archetypal values embedded symbolically and firmly in the specified Goddess in order to facilitate psychological revival and continued health, and finally a poetic blessing to access the less structured but higher nature of the human mind.",
+            "isbn": "9780997046717",
+            "price": "3.99",
+            "image": "media/book/legends_of_the_grail_stories_of_celtic_goddesses.jpg",
+            "available": true,
+            "date_added": "2022-12-04T14:48:34.086Z",
+            "updated": "2022-12-04T14:48:34.086Z",
+            "genre": [
+                "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "e280f9c2-fc40-43e4-b189-0cc5530822e5",
+        "fields": {
+            "name": "Beginning MERN Stack (MongoDB, Express, React, Node.js)",
+            "author": "Greg Lim",
+            "description": "In this book, we take you on a fun, hands-on and pragmatic journey to learning MERN stack development. You'll start building your first MERN stack app within minutes. Every chapter is written in a bite-sized manner and straight to the point as I don�t want to waste your time (and most certainly mine) on the content you don't need. In the end, you will have the skills to create a Movies review app and deploy it to the Internet.\r\n\r\nWorking Through This Book\r\nThis book is purposely broken down into short chapters where the development process of each chapter will center on different essential topics. The book takes a practical hands on approach to learning through practice. You learn best when you code along with the examples in the book.\r\n\r\nRequirements\r\nNo previous knowledge on Node.js or React development is required, but you should have basic programming knowledge. It will be a helpful advantage if you could read through my Node, Express book and React book first which will provide you will better insight and deeper knowledge into the various technologies. But even if you have not done so, you should still be able to follow along.",
+            "isbn": "9781005232467",
+            "price": "9.99",
+            "image": "media/book/mern_stack_development.jpg",
+            "available": true,
+            "date_added": "2022-12-04T15:20:16.832Z",
+            "updated": "2022-12-04T15:20:16.832Z",
+            "genre": [
+                "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "e2d6b806-857e-4d14-8ba1-e8b967dd7acc",
+        "fields": {
+            "name": "Star Threat",
+            "author": "T. Jackson King",
+            "description": "Nathan Stewart hates politics. But that is what he finds on his return to Earth with the STAR GLORY and his shipmates. Politics even ruins his family get-together. All too soon he and his shipmates are called back to man the GLORY in a solo effort to hunt down and kill Empire of Eternity fleet ships, traders and passenger ships, all as part of the effort to force the Empire into pulling its fleets back to defend existing Empire stars and planets. But Manager Smooth Fur of the Empire has no intention of allowing the primitive humans from Earth to block his fleet�s expansion into Orion Arm. And he has some tricks and tech that he will employ to kill the STAR GLORY and any other ship sent against him. Nathan hopes his talent for anticipating problems and the solutions to them will save his life, the life of his fianc� and the lives of his shipmates. But can one talented young man stand against a galactic empire?",
+            "isbn": "9781386038368",
+            "price": "2.99",
+            "image": "media/book/star_threat.jpg",
+            "available": true,
+            "date_added": "2022-12-04T15:13:08.761Z",
+            "updated": "2022-12-04T15:13:08.761Z",
+            "genre": [
+                "3db822e3-9003-4c1d-8c8e-68691396e2dd"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "e32d1d4f-a4c8-4f48-bc13-194751425f6d",
+        "fields": {
+            "name": "Sword of Darkness",
+            "author": "Keri Arthur",
+            "description": "The race to claim Agrona's Claws continues�\r\n\r\nAgrona's claws�three godly artifacts that, when used together, have the power to either extend darkness or utterly banish it�were deliberately hidden eons ago so that no man or woman would ever again wield them. But nothing stays hidden forever, and the Crown of Shadows was recently unearthed and stolen, despite Bethany Aodh�n's best efforts to stop it.\r\n\r\nNow Beth and her brother Lugh must seek out the Sword of Darkness before those intent on destruction can reunite two of the three Claws and unleash chaos.\r\n\r\nBut even the help of a cranky goddess and two sexy elves might not be enough to save the day� or the world itself.\r\n\r\nBecause the forces of darkness are gathering momentum, and its origin lies closer to home than any of them guessed.",
+            "isbn": "9780645303117",
+            "price": "4.99",
+            "image": "media/book/sword_of_darkness.jpg",
+            "available": true,
+            "date_added": "2022-12-04T14:53:06.881Z",
+            "updated": "2022-12-04T14:53:06.882Z",
+            "genre": [
+                "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "e5e05414-fbce-4d35-b6f1-ac34d9ac2827",
+        "fields": {
+            "name": "Star Bound",
+            "author": "Robert Appleton",
+            "description": "The quest to solve an ancient riddle becomes an odyssey for the ages when Jim Trillion, Sergei and friends find themselves on the perilous path to the Fording�a long-lost device so powerful it may have created the Star Binder itself. With the treacherous Sheikers also seeking to possess it, Jim and his team must delve deep into the legacy of an extinct civilization known as the Builders, in order to unravel the clues that will see them past a series of deadly traps. But even with help from an unlikely ally, nothing is as it seems in this race against time, destiny, and the dark forces of the cosmos.\r\n\r\nMeanwhile, the five young adventurers ponder their future in the increasingly oppressive Initiative. As the war makes inroads into the sanctity of the hidden colonies, fight or flight is the question each of them must soon face. And as Jim�s relationship with Rachel starts to blossom, so too do his unprecedented abilities inside the Binder�an �awakening� that could profoundly affect mankind�s journey to the stars.",
+            "isbn": "9781005094782",
+            "price": "2.99",
+            "image": "media/book/star_bound.jpg",
+            "available": true,
+            "date_added": "2022-12-04T15:12:27.681Z",
+            "updated": "2022-12-04T15:12:27.681Z",
+            "genre": [
+                "3db822e3-9003-4c1d-8c8e-68691396e2dd"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "e987b95a-9b03-473b-8f5b-fbef37d01a89",
+        "fields": {
+            "name": "Of Thorn and Thread",
+            "author": "Chanda Hahn",
+            "description": "Born an empath, I have the power�and burden�of hearing thoughts and feeling emotions. Retreating from the world, my only refuge is an ancient tower, but my haven is shattered when an injured man arrives with a plea to save the kingdom.\r\n\r\nLiam is the perfect knight, yet one attribute makes me hesitate. He is immune to my powers. His thoughts are a mystery, his heart an enigma. And while I fear the unknown, I cannot resist the desire to unravel his secrets.\r\n\r\nFor I am Aura, one of the adopted daughters of Lady Eville. I have joined Liam in his quest to destroy a magical blight that ushers in darkness and poisonous thorns. The closer I get to the source, the more I sense threads of destiny weaving a deadly cage, and at the end of the journey lies a fate worse than death.\r\n\r\nEternal slumber.",
+            "isbn": "9781950440191",
+            "price": "4.99",
+            "image": "media/book/of_thorn_and_thread.jpg",
+            "available": true,
+            "date_added": "2022-12-04T14:51:23.181Z",
+            "updated": "2022-12-04T14:51:23.181Z",
+            "genre": [
+                "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "f12563bb-6156-44fe-8aee-bd1b814454d9",
+        "fields": {
+            "name": "Spring Boot 2: How To Get Started and Build a Microservice - Third Edition",
+            "author": "Jens Boje",
+            "description": "From Zero Spring Experience to Building Your First Microservice with Spring Boot 2\r\nLearn to build your first microservice with Spring Boot. Together we will write a production-ready microservice with a REST API in just a few hours. All starting from having zero experience with Spring at all.\r\n\r\nRevised and extended 3rd edition\r\n\r\nUpdate: Using Spring Boot 2.1.8.RELEASE version.\r\n\r\nOur guides give you brief lessons on a single topic to get you started in no time. We leave the fluff out so you can focus and learn better and faster. Stop wasting hours of your life watching video courses or reading boring compendiums. Use our guide and save your precious time and be way ahead of your competitors on that next big project.\r\n\r\nWe build a real application (less than 850 lines of code though) using a standard Maven project structure together, and I will explain you the steps and libraries involved on the go. You must know Java.\r\n\r\nYou learn best by coding. The way I love learning too. And not by reading fluffy compendiums or watching 10 hours and more of videos. Sure, you can do that, but any developer following my guide will be way ahead of you before you are even halfway through that video course.\r\n\r\nWhat you will build:\r\nWe build a Microservice for storing comments and providing a REST interface for interacting with the data. The sample application is modeled after a real production application to guide you through building your first Spring Boot application.\r\n\r\nWhat you will learn:\r\nWhat problem the Spring Framework actually solves\r\nThe basics of the Spring Framework aka Core\r\nHow to build a microservice with Spring Boot 2\r\nHow to work with a relational database using the Spring Data JPA Framework\r\nHow to write the REST API using Spring MVC\r\nHow to create a service layer and integrate a legacy library using its own Spring ApplicationContext in an XML file\r\nHow to test the application\r\nA simple way to secure your application\r\nHow to use monitoring and health check out of the box with Spring Boot\r\nHow to deploy your application\r\nHow to navigate in the project with Maven\r\n\r\nYou must have experience with Java as we are not covering Java basics. Everything else we use is covered in the guide.\r\n\r\nIf you have questions, do not hesitate to contact me using the email address at the end of the book. I'll answer your questions and improve the book with your feedback. Promised!",
+            "isbn": "9781005063559",
+            "price": "6.99",
+            "image": "media/book/spring_boot_2.jpg",
+            "available": true,
+            "date_added": "2022-12-04T15:22:07.465Z",
+            "updated": "2022-12-04T15:22:07.465Z",
+            "genre": [
+                "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "f4916094-4374-4755-b7ea-114211bb4752",
+        "fields": {
+            "name": "Viking Legend",
+            "author": "Griff Hosker",
+            "description": "Dragonheart must find the traitor, Magnus, who is still a threat to his home. He journeys north to the wild islands and to the land of the Welsh but still his enemy evades him. Finding another link to his past he discovers the tomb of an ancient Queen and his link to the mystical sword is strengthened. When he does find his enemy, it is in the heart of a Saxon kingdom, surrounded by danger.",
+            "isbn": "9781311582751",
+            "price": "5.99",
+            "image": "media/book/viking_legend.jpg",
+            "available": true,
+            "date_added": "2022-12-04T14:42:50.632Z",
+            "updated": "2022-12-04T14:42:50.632Z",
+            "genre": [
+                "94528d58-8af0-4c4a-acdf-d1001965fb7e"
+            ]
+        }
+    },
+    {
+        "model": "store.ebook",
+        "pk": "f5cfd46d-9354-4f96-89d8-aef0bacc9657",
+        "fields": {
+            "name": "Appsters: A Beginner's Guide to App Entrepreneurship",
+            "author": "Bobby Gill",
+            "description": "Do you have an idea for a mobile app that you want to bring to life?\r\n\r\nFrom the creators of the popular app entrepreneurship blog 'Idea To Appster' comes 'Appsters: A Beginner's Guide to App Entrepreneurship'.\r\n\r\nYou don't need to be a programmer or technical wizard to create a successful app business, Appsters will show you how. Using their first hand experience launching multiple successful mobile apps, along with interviews conducted with other successful app entrepreneurs, Bobby Gill and Jordan Gurrieri give you an easy-to-understand and comprehensive look at everything you need to know to take your idea and turn it into a successful app business.\r\n\r\nWritten for a non-technical audience, Appsters breaks through the technical jargon to give you a plain-spoken, entertaining and end-to-end understanding of app entrepreneurship. From designing engaging user experiences, to choosing the right mobile platform, to effective marketing and promotion, follow along as Bobby and Jordan go step-by-step through the entire process of designing, building and releasing a mobile app for the iPhone from scratch.\r\n\r\nAppsters is a must have guide for the aspiring app entrepreneur.\r\n\r\nWith Appsters you'll learn:\r\n\r\n- What separates the great money making apps from the rest of the pack\r\n- How to design beautiful apps that users will love to use and tell their friends about.\r\n- How to use paid-downloads, 'fermium' functionality and advertising to monetize your app from day 1.\r\n- How to manage the app development process from managing off-shore development teams to finding the right engineers to work on your app.\r\n- The secrets to marketing your app. Learn how successful app entrepreneurs use press releases, web sites, and social media to help their apps go viral and get thousands of downloads within a few weeks.",
+            "isbn": "9780988686502",
+            "price": "9.99",
+            "image": "media/book/appsters.jpg",
+            "available": true,
+            "date_added": "2022-12-04T15:14:11.172Z",
+            "updated": "2022-12-04T15:14:11.172Z",
+            "genre": [
+                "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
+            ]
+        }
+    }
+]
