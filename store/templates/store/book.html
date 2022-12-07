@@ -1,2 +1,37 @@
-<h1>Ebooks</h1>
-<p>Place Holder page</p>
+{% extends "base.html" %}
+{% load static %}
+{% block metadescription %}
+{{ book.description|truncatewords:155 }}
+{% endblock %}
+{% block title %}
+{{ book.name }} - Perfect Cushion Store
+{% endblock %}
+{% block content %}
+<div>
+    <div>
+        <p><a href="{% url 'store:all_books' %}">Home</a> | <a href="{{ book.genre.get_absolute_url }}">{{book.genre}}</a> |
+            {{book.name}}</p>
+    </div>
+    <div class = "container">
+        <br>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
+                <div style="min-width: 18rem;">
+                    <img class= "card text-center img-fluid rounded mx-auto d-block" src="{{book.image.url}}" alt="{{book.name}}">
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                <div>
+                    <h1 class="my_prod_title">{{book.name}}</h1>
+                    <p>€{{book.price}}</p>
+                    <p class="my_title">book Description</p>
+                    <p class="text-justify my_prod_text">{{book.description}}</p>
+
+                    {% comment %} <a class="btn btn-secondary" href="{% url 'cart:add_to_cart' book.id %}">Add to Cart</a> {% endcomment %}
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

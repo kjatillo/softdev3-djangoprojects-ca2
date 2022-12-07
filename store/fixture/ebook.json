@@ -57,9 +57,7 @@
             "available": true,
             "date_added": "2022-12-04T15:00:15.593Z",
             "updated": "2022-12-04T15:00:15.593Z",
-            "genre": [
-                "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
-            ]
+            "genre": "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
         }
     },
     {
@@ -75,9 +73,7 @@
             "available": true,
             "date_added": "2022-12-04T15:14:55.564Z",
             "updated": "2022-12-04T15:14:55.564Z",
-            "genre": [
-                "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
-            ]
+            "genre": "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
         }
     },
     {
@@ -93,9 +89,8 @@
             "available": true,
             "date_added": "2022-12-03T17:08:31.604Z",
             "updated": "2022-12-03T17:08:31.604Z",
-            "genre": [
-                "94528d58-8af0-4c4a-acdf-d1001965fb7e"
-            ]
+            "genre": "94528d58-8af0-4c4a-acdf-d1001965fb7e"
+            
         }
     },
     {
@@ -107,13 +102,11 @@
             "description": "I had to accept that I wasn�t just Arthur Leywin anymore, and that I could no longer be limited by the circumstances of my birth. If I was going to escape, if I was going to go toe-to-toe with the most powerful beings in this world, I needed to push myself to my utmost limit...and then I needed to push even further.\r\n\r\nAfter nearly dying as a victim of his own strength, Arthur Leywin wakes to find himself far from the continent where he was born for the second time. Alone, broken, and with no way to tell his family he�s alive, Arthur must rebuild his strength to survive. As he ascends through an ancient dungeon filled with hostile beasts and devious trials, he discovers an ancient, absolute power - a power that will either ruin him or take him to new heights. But the dungeon won�t give up its knowledge easily. Before he can plunder its depths, Arthur must learn to untangle the threads of fate. He must band together with the unlikeliest of allies if he hopes to escape with his life.",
             "isbn": "9781005484187",
             "price": "4.99",
-            "image": "",
+            "image": "media/book/ascension.jpg",
             "available": true,
             "date_added": "2022-12-04T14:44:13.802Z",
             "updated": "2022-12-04T14:44:13.802Z",
-            "genre": [
-                "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
-            ]
+            "genre": "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
         }
     },
     {
@@ -129,9 +122,7 @@
             "available": true,
             "date_added": "2022-12-04T14:55:54.187Z",
             "updated": "2022-12-04T14:55:54.187Z",
-            "genre": [
-                "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
-            ]
+            "genre": "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
         }
     },
     {
@@ -147,9 +138,7 @@
             "available": true,
             "date_added": "2022-12-04T15:23:53.969Z",
             "updated": "2022-12-04T15:23:53.969Z",
-            "genre": [
-                "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
-            ]
+            "genre":"b901e6e5-921d-4f11-a3c4-3a946eb25d89"
         }
     },
     {
@@ -165,9 +154,8 @@
             "available": true,
             "date_added": "2022-12-04T15:10:52.437Z",
             "updated": "2022-12-04T15:10:52.438Z",
-            "genre": [
-                "3db822e3-9003-4c1d-8c8e-68691396e2dd"
-            ]
+            "genre":"3db822e3-9003-4c1d-8c8e-68691396e2dd"
+            
         }
     },
     {
@@ -183,9 +171,8 @@
             "available": true,
             "date_added": "2022-12-04T15:09:56.723Z",
             "updated": "2022-12-04T15:09:56.723Z",
-            "genre": [
-                "3db822e3-9003-4c1d-8c8e-68691396e2dd"
-            ]
+            "genre": "3db822e3-9003-4c1d-8c8e-68691396e2dd"
+            
         }
     },
     {
@@ -201,9 +188,8 @@
             "available": true,
             "date_added": "2022-12-04T15:08:05.751Z",
             "updated": "2022-12-04T15:08:05.751Z",
-            "genre": [
-                "3db822e3-9003-4c1d-8c8e-68691396e2dd"
-            ]
+            "genre": "3db822e3-9003-4c1d-8c8e-68691396e2dd"
+            
         }
     },
     {
@@ -219,9 +205,8 @@
             "available": true,
             "date_added": "2022-12-04T14:56:53.048Z",
             "updated": "2022-12-04T14:56:53.048Z",
-            "genre": [
-                "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
-            ]
+            "genre": "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
+            
         }
     },
     {
@@ -237,9 +222,8 @@
             "available": true,
             "date_added": "2022-12-04T14:55:05.634Z",
             "updated": "2022-12-04T14:55:05.634Z",
-            "genre": [
-                "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
-            ]
+            "genre": "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
+            
         }
     },
     {
@@ -251,13 +235,12 @@
             "description": "Protect your family, defend the empire, honour the gods. This is the code you have lived by all your life, Pacorus. Everything you have undertaken has been with those three objectives uppermost in your mind. And now your life�s work is nearly complete. Your family prospers, the empire is safe, and the gods are the indifferent, callous, bloodthirsty deities they have been since the dawn of time. And yet, they can also be generous, even kind. After a wearisome battle to defend your kingdom, they present you with the opportunity to experience one last great adventure, an offer that is almost beyond comprehension. Grasp it with both hands, Pacorus, and ride to war again, this time against the most dangerous enemy the Parthian Empire has ever faced. But you will not be alone, and the ensuing perils and calamities will seem insignificant when compared to the great miracle the gods have gifted you. �Conqueror� is the sixteenth volume in the Parthian Chronicles series and follows on from �Dura�. Maps of the Parthian Empire and Judea in the 1st century BC can be found on the maps page of my website.",
             "isbn": "9781005868505",
             "price": "4.80",
-            "image": "",
+            "image": "media/book/conqueror.jpg",
             "available": true,
             "date_added": "2022-12-03T17:13:17.536Z",
             "updated": "2022-12-03T17:13:17.536Z",
-            "genre": [
-                "94528d58-8af0-4c4a-acdf-d1001965fb7e"
-            ]
+            "genre": "94528d58-8af0-4c4a-acdf-d1001965fb7e"
+            
         }
     },
     {
@@ -273,9 +256,8 @@
             "available": true,
             "date_added": "2022-12-04T15:09:11.105Z",
             "updated": "2022-12-04T15:09:11.105Z",
-            "genre": [
-                "3db822e3-9003-4c1d-8c8e-68691396e2dd"
-            ]
+            "genre": "3db822e3-9003-4c1d-8c8e-68691396e2dd"
+            
         }
     },
     {
@@ -291,9 +273,8 @@
             "available": true,
             "date_added": "2022-12-04T15:03:54.105Z",
             "updated": "2022-12-04T15:03:54.105Z",
-            "genre": [
-                "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
-            ]
+            "genre": "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
+            
         }
     },
     {
@@ -309,9 +290,8 @@
             "available": true,
             "date_added": "2022-12-04T14:59:10.407Z",
             "updated": "2022-12-04T14:59:10.407Z",
-            "genre": [
-                "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
-            ]
+            "genre": "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
+            
         }
     },
     {
@@ -327,9 +307,8 @@
             "available": true,
             "date_added": "2022-12-04T15:04:33.735Z",
             "updated": "2022-12-04T15:04:33.735Z",
-            "genre": [
-                "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
-            ]
+            "genre": "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
+            
         }
     },
     {
@@ -341,13 +320,12 @@
             "description": "From the author of The Hemlock Bay Series comes a new retelling of an old tale�\r\n\r\n� Not every Beast is a prince charming at heart and not every Beauty is a maiden just waiting for love�\r\n\r\nCalia Thorn has lived her entire life in a small town sheltered by the Cold King�s mountain. Working day and night to care for her younger siblings, complete her unending chores and please her selfish, lazy mother has left her with few dreams for her own future.\r\n\r\nBut then even those meager hopes are taken from her when the Cold King comes down from his mountain to demand a new servant. Ungraceful, unladylike, undesired and unwanted by even her own family, Calia is chosen to be sent to the palace.\r\n\r\nThe Cold King has lived for three hundred years under a curse imposed by his own father. With no hope of ever breaking it, he settles for keeping his heart frozen against any pain� or hope.\r\n\r\nWhen his new servant arrives, she challenges him in ways no one ever has and sparks fly. But not every Beast is a prince charming at heart and not every beauty is a maiden just waiting for love.\r\n\r\nSometimes happily ever after isn�t so easy�\r\n\r\nThe Cold King is a dark retelling of Beauty and the Beast.",
             "isbn": "9781301473700",
             "price": "4.99",
-            "image": "",
+            "image": "media/book/the_cold_king.jpg",
             "available": true,
             "date_added": "2022-12-04T14:54:08.410Z",
             "updated": "2022-12-04T14:54:08.410Z",
-            "genre": [
-                "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
-            ]
+            "genre": "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
+            
         }
     },
     {
@@ -363,9 +341,8 @@
             "available": true,
             "date_added": "2022-12-04T15:18:39.869Z",
             "updated": "2022-12-04T15:18:39.869Z",
-            "genre": [
-                "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
-            ]
+            "genre": "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
+            
         }
     },
     {
@@ -381,9 +358,8 @@
             "available": true,
             "date_added": "2022-12-03T17:14:59.497Z",
             "updated": "2022-12-03T17:14:59.497Z",
-            "genre": [
-                "94528d58-8af0-4c4a-acdf-d1001965fb7e"
-            ]
+            "genre": "94528d58-8af0-4c4a-acdf-d1001965fb7e"
+            
         }
     },
     {
@@ -399,9 +375,8 @@
             "available": true,
             "date_added": "2022-12-04T14:41:48.858Z",
             "updated": "2022-12-04T14:41:48.858Z",
-            "genre": [
-                "94528d58-8af0-4c4a-acdf-d1001965fb7e"
-            ]
+            "genre": "94528d58-8af0-4c4a-acdf-d1001965fb7e"
+            
         }
     },
     {
@@ -417,9 +392,8 @@
             "available": true,
             "date_added": "2022-12-04T15:02:12.627Z",
             "updated": "2022-12-04T15:02:12.627Z",
-            "genre": [
-                "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
-            ]
+            "genre": "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
+            
         }
     },
     {
@@ -435,9 +409,8 @@
             "available": true,
             "date_added": "2022-12-04T15:17:58.983Z",
             "updated": "2022-12-04T15:17:58.983Z",
-            "genre": [
-                "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
-            ]
+            "genre": "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
+            
         }
     },
     {
@@ -453,9 +426,8 @@
             "available": true,
             "date_added": "2022-12-04T15:16:58.764Z",
             "updated": "2022-12-04T15:16:58.764Z",
-            "genre": [
-                "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
-            ]
+            "genre": "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
+            
         }
     },
     {
@@ -467,13 +439,12 @@
             "description": "The high summer season. A long-awaited wedding. Surprises at a historic beach inn.\r\n**From a USA Today bestselling author**\r\n\r\nAt the historic Seabreeze Inn, a summer beach wedding has sisters Ivy and Shelly Bay busier than ever with wedding plans. New guests arrive for the high summer season, bringing with them fresh challenges. As Ivy prepares the old beach house for a family wedding, surprising discoveries from decades past arise once again. Read Seabreeze Wedding as a standalone or as part of the beloved Summer Beach series. RSVP now and join the party.",
             "isbn": "9781647780289",
             "price": "5.99",
-            "image": "",
+            "image": "media/book/seabreeze_wedding.jpg",
             "available": true,
             "date_added": "2022-12-04T15:01:05.952Z",
             "updated": "2022-12-04T15:01:05.952Z",
-            "genre": [
-                "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
-            ]
+            "genre": "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
+            
         }
     },
     {
@@ -489,9 +460,8 @@
             "available": true,
             "date_added": "2022-12-04T15:05:20.212Z",
             "updated": "2022-12-04T15:05:20.212Z",
-            "genre": [
-                "3db822e3-9003-4c1d-8c8e-68691396e2dd"
-            ]
+            "genre": "3db822e3-9003-4c1d-8c8e-68691396e2dd"
+            
         }
     },
     {
@@ -507,9 +477,8 @@
             "available": true,
             "date_added": "2022-12-04T14:58:30.497Z",
             "updated": "2022-12-04T14:58:30.497Z",
-            "genre": [
-                "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
-            ]
+            "genre": "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
+            
         }
     },
     {
@@ -525,9 +494,8 @@
             "available": true,
             "date_added": "2022-12-04T14:57:43.330Z",
             "updated": "2022-12-04T14:57:43.330Z",
-            "genre": [
-                "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
-            ]
+            "genre": "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9"
+            
         }
     },
     {
@@ -543,9 +511,8 @@
             "available": true,
             "date_added": "2022-12-04T14:37:05.375Z",
             "updated": "2022-12-04T14:37:05.375Z",
-            "genre": [
-                "94528d58-8af0-4c4a-acdf-d1001965fb7e"
-            ]
+            "genre": "94528d58-8af0-4c4a-acdf-d1001965fb7e"
+            
         }
     },
     {
@@ -561,9 +528,8 @@
             "available": true,
             "date_added": "2022-12-04T14:45:01.267Z",
             "updated": "2022-12-04T14:45:01.267Z",
-            "genre": [
-                "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
-            ]
+            "genre": "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
+            
         }
     },
     {
@@ -579,9 +545,8 @@
             "available": true,
             "date_added": "2022-12-04T15:06:04.533Z",
             "updated": "2022-12-04T15:06:04.533Z",
-            "genre": [
-                "3db822e3-9003-4c1d-8c8e-68691396e2dd"
-            ]
+            "genre": "3db822e3-9003-4c1d-8c8e-68691396e2dd"
+            
         }
     },
     {
@@ -597,9 +562,8 @@
             "available": true,
             "date_added": "2022-12-04T14:50:13.799Z",
             "updated": "2022-12-04T14:50:13.799Z",
-            "genre": [
-                "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
-            ]
+            "genre": "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
+            
         }
     },
     {
@@ -615,9 +579,8 @@
             "available": true,
             "date_added": "2022-12-03T17:16:24.325Z",
             "updated": "2022-12-03T17:16:24.325Z",
-            "genre": [
-                "94528d58-8af0-4c4a-acdf-d1001965fb7e"
-            ]
+            "genre": "94528d58-8af0-4c4a-acdf-d1001965fb7e"
+            
         }
     },
     {
@@ -633,9 +596,8 @@
             "available": true,
             "date_added": "2022-12-04T14:39:21.967Z",
             "updated": "2022-12-04T14:39:21.967Z",
-            "genre": [
-                "94528d58-8af0-4c4a-acdf-d1001965fb7e"
-            ]
+            "genre": "94528d58-8af0-4c4a-acdf-d1001965fb7e"
+            
         }
     },
     {
@@ -651,9 +613,8 @@
             "available": true,
             "date_added": "2022-12-04T14:52:13.050Z",
             "updated": "2022-12-04T14:52:13.050Z",
-            "genre": [
-                "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
-            ]
+            "genre": "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
+            
         }
     },
     {
@@ -669,11 +630,8 @@
             "available": true,
             "date_added": "2022-12-04T15:11:43.555Z",
             "updated": "2022-12-04T15:11:43.555Z",
-            "genre": [
-                "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb",
-                "dd18a5d2-9f6d-43af-8ed5-d0a71e4634b9",
-                "3db822e3-9003-4c1d-8c8e-68691396e2dd"
-            ]
+            "genre": "3db822e3-9003-4c1d-8c8e-68691396e2dd"
+            
         }
     },
     {
@@ -685,13 +643,12 @@
             "description": "Winter, 48 BC. Caesar and his small force are trapped in the Egyptian city of Alexandria. Caught up in the dynastic struggles of the House of Ptolemy, the consul has sided with the clever and ruthless Queen Cleopatra. Her brother and fellow monarch Ptolemy XIII languishes in the palace, a hostage of Caesar�s, while a huge army under the command of the Egyptian general Achillas closes on the city to free him. With both the future of this ancient land and the safety of Caesar and his men at stake, Fronto and his friends face the terrible task of holding an unfamiliar city under siege, in the desperate hope that reinforcements will reach them before the enemy break in. But Egyptian reinforcements gather too, and with the interference of the youngest princess, Arsino�, the future is far from written. Trapped, besieged and outnumbered, time is running out for the Romans, as shadows loom across the sands of Egypt",
             "isbn": "9780463655368",
             "price": "5.49",
-            "image": "",
+            "image": "media/book/Murius_mules_xii_sands_of_egypt.jpg",
             "available": true,
             "date_added": "2022-12-03T17:17:45.217Z",
             "updated": "2022-12-03T17:17:45.217Z",
-            "genre": [
-                "94528d58-8af0-4c4a-acdf-d1001965fb7e"
-            ]
+            "genre": "94528d58-8af0-4c4a-acdf-d1001965fb7e"
+            
         }
     },
     {
@@ -707,9 +664,8 @@
             "available": true,
             "date_added": "2022-12-04T15:19:30.359Z",
             "updated": "2022-12-04T15:19:30.359Z",
-            "genre": [
-                "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
-            ]
+            "genre": "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
+            
         }
     },
     {
@@ -721,13 +677,12 @@
             "description": "Losing a loved one is hard� losing three is heart shattering. Within less than a year, Josephine has lost the three most important men in her life in two separate accidents. How does one come back from a hurt that grips you so tightly that it's hard to even breathe? When her estranged father leaves a will naming her and her sisters the sole heirs of the inn and restaurant in Oak Harbor, Jo finds herself putting her pride aside and heading back to the one place she'd vowed never to return. Josephine is finally finding her way after being lost for so long, but when secrets that should have been buried start resurfacing, she runs the risk of losing the most important person in her life. She now realizes the life she's hanging onto is about to become shattered into pieces. She's found her footing with her once estranged sisters, but one wrong word is all it could take to topple this fragile bond. Add in a terminally ill mother and you can understand why she's hesitant to give in to the beginning of a new love. Will the loss and fragility of her relationships be too much for Josephine to bear or can she open her heart to an enduring love? Lose yourself in this new women's fiction series that includes friendship, love, and loss among the Hamilton family & friends. A heartwarming cast of characters that has the backdrop of Oak Harbor's coastal serene landscapes and crystal blue waters.",
             "isbn": "9781393939108",
             "price": "3.99",
-            "image": "",
+            "image": "media/book/the_brotherhood_of_the_rose_an_espionage_thriller.jpg",
             "available": true,
             "date_added": "2022-12-04T14:40:29.889Z",
             "updated": "2022-12-04T14:40:29.889Z",
-            "genre": [
-                "94528d58-8af0-4c4a-acdf-d1001965fb7e"
-            ]
+            "genre": "94528d58-8af0-4c4a-acdf-d1001965fb7e"
+            
         }
     },
     {
@@ -743,9 +698,8 @@
             "available": true,
             "date_added": "2022-12-04T15:06:48.213Z",
             "updated": "2022-12-04T15:06:48.213Z",
-            "genre": [
-                "3db822e3-9003-4c1d-8c8e-68691396e2dd"
-            ]
+            "genre": "3db822e3-9003-4c1d-8c8e-68691396e2dd"
+            
         }
     },
     {
@@ -761,9 +715,8 @@
             "available": true,
             "date_added": "2022-12-04T14:49:28.722Z",
             "updated": "2022-12-04T14:49:28.722Z",
-            "genre": [
-                "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
-            ]
+            "genre": "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
+            
         }
     },
     {
@@ -779,9 +732,8 @@
             "available": true,
             "date_added": "2022-12-04T15:21:11.795Z",
             "updated": "2022-12-04T15:21:11.795Z",
-            "genre": [
-                "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
-            ]
+            "genre": "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
+            
         }
     },
     {
@@ -797,9 +749,8 @@
             "available": true,
             "date_added": "2022-12-04T14:48:34.086Z",
             "updated": "2022-12-04T14:48:34.086Z",
-            "genre": [
-                "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
-            ]
+            "genre": "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
+            
         }
     },
     {
@@ -815,9 +766,8 @@
             "available": true,
             "date_added": "2022-12-04T15:20:16.832Z",
             "updated": "2022-12-04T15:20:16.832Z",
-            "genre": [
-                "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
-            ]
+            "genre": "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
+            
         }
     },
     {
@@ -833,9 +783,8 @@
             "available": true,
             "date_added": "2022-12-04T15:13:08.761Z",
             "updated": "2022-12-04T15:13:08.761Z",
-            "genre": [
-                "3db822e3-9003-4c1d-8c8e-68691396e2dd"
-            ]
+            "genre": "3db822e3-9003-4c1d-8c8e-68691396e2dd"
+            
         }
     },
     {
@@ -851,9 +800,8 @@
             "available": true,
             "date_added": "2022-12-04T14:53:06.881Z",
             "updated": "2022-12-04T14:53:06.882Z",
-            "genre": [
-                "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
-            ]
+            "genre": "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
+            
         }
     },
     {
@@ -869,9 +817,8 @@
             "available": true,
             "date_added": "2022-12-04T15:12:27.681Z",
             "updated": "2022-12-04T15:12:27.681Z",
-            "genre": [
-                "3db822e3-9003-4c1d-8c8e-68691396e2dd"
-            ]
+            "genre": "3db822e3-9003-4c1d-8c8e-68691396e2dd"
+            
         }
     },
     {
@@ -887,9 +834,8 @@
             "available": true,
             "date_added": "2022-12-04T14:51:23.181Z",
             "updated": "2022-12-04T14:51:23.181Z",
-            "genre": [
-                "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
-            ]
+            "genre": "ec5bfa6f-d391-41a5-b0df-d6c8a5e927cb"
+            
         }
     },
     {
@@ -905,9 +851,8 @@
             "available": true,
             "date_added": "2022-12-04T15:22:07.465Z",
             "updated": "2022-12-04T15:22:07.465Z",
-            "genre": [
-                "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
-            ]
+            "genre": "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
+            
         }
     },
     {
@@ -923,9 +868,8 @@
             "available": true,
             "date_added": "2022-12-04T14:42:50.632Z",
             "updated": "2022-12-04T14:42:50.632Z",
-            "genre": [
-                "94528d58-8af0-4c4a-acdf-d1001965fb7e"
-            ]
+            "genre": "94528d58-8af0-4c4a-acdf-d1001965fb7e"
+            
         }
     },
     {
@@ -941,9 +885,8 @@
             "available": true,
             "date_added": "2022-12-04T15:14:11.172Z",
             "updated": "2022-12-04T15:14:11.172Z",
-            "genre": [
-                "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
-            ]
+            "genre": "b901e6e5-921d-4f11-a3c4-3a946eb25d89"
+            
         }
     }
 ]
