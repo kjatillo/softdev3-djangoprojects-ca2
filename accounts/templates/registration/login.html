@@ -26,6 +26,9 @@
                 <p>{{ form | crispy }}</p>
                 <button type="submit" class="btn btn-success">Login</button>&ensp;
                 <a href="{% url 'signup' %}" class="btn btn-secondary">Sign Up</a>
+                <div id="forgot-pass">
+                    <a href="{% url 'password_reset'  %}">Forgot Password?</a>
+                </div>
             </form>
             <br>
         </div>

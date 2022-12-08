@@ -5,6 +5,11 @@
     letter-spacing: .2em;
 }
 
+.form-control:focus {
+    box-shadow: none;
+    border-color: green;
+}
+
 /* Accounts app */
 #login-img {
     width: 100%;
@@ -12,6 +17,25 @@
 
 #signup-img {
     width: 100%;
+}
+
+#forgot-pass {
+    padding-top: 10px;
+}
+
+#forgot-pass a {
+    color: #000;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+#forgot-pass a:hover {
+    text-decoration: underline;
+}
+
+#form-pass-change, #form-pass-reset, #pass-reset-done, #pass-reset-confirm, #pass-reset-complete {
+    margin: auto;
+    width: 50%;
 }
 
 /* Header */
@@ -43,10 +67,6 @@ header i {
 
 header .input-group {
     width: 75%;
-}
-
-header .form-control:focus {
-    box-shadow: none;
 }
 
 /* Navigation */
