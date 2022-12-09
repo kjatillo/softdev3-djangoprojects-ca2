@@ -33,11 +33,6 @@
     text-decoration: underline;
 }
 
-#form-pass-change, #form-pass-reset, #pass-reset-done, #pass-reset-confirm, #pass-reset-complete {
-    margin: auto;
-    width: 50%;
-}
-
 /* Header */
 header {
     background-color: #f3f6f4;
@@ -177,4 +172,9 @@ footer, footer i {
     #signup-form {
         margin-top: 5em;
     }
+
+    #form-pass-change, #form-pass-reset, #pass-reset-done, #pass-reset-confirm, #pass-reset-complete, #user-profile, #edit-profile {
+        margin: auto;
+        width: 50%;
+    }   
 }
