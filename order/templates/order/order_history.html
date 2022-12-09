@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Order History - eBook Store
+{% endblock title %}
+
+{% block content %}
+<div>
+    <div class="text-center">
+        <br>
+        <h1 class="text-center my_title">Order History</h1>
+        <br>
+        {% if order_details %}
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Order #</th>
+                        <th>Order Date</th>
+                        <th>Total Amount</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for order in order_details %}
+                    <tr>
+                        <td>{{ order.id }}</td>
+                        <td>{{ order.created|date:"d M Y" }}</td>
+                        <td>€{{ order.total }}</td>
+                        <td>
+                            <i class="fas fa-check"></i>
+                            &nbsp;Complete
+                        </td>
+                        <td><a href="{% url 'order:order_detail' order.id %}">
+                            <button class="btn btn-success">View Order</button>
+                        </a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p>
+                You have not placed any orders yet.
+                <br>
+                <br>
+                <a href="{% url 'store:all_books' %}">
+                    <button class="btn btn-success">Continue Shopping</button>
+                </a>
+            </p>
+        {% endif %}
+    </div>
+</div>
+<br>
+<br>
+{% endblock content %}
