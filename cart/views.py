@@ -55,7 +55,7 @@ def cart_detail(request, total=0, counter=0, cart_items=None):
         try:
             token = request.POST['stripeToken']
             email = request.POST['stripeEmail']
-            billingName = request.POST['stripeBillingName']
+            # billingName = request.POST['stripeBillingName']
 
             customer = stripe.Customer.create(email=email, source=token)
             stripe.Charge.create(amount=stripe_total, currency="eur",
@@ -63,25 +63,28 @@ def cart_detail(request, total=0, counter=0, cart_items=None):
 
             # Creating the order
             try:
-                order_details = Order.object.create(
+                order_details = Order.objects.create(
                     token=token,
                     total=total,
                     emailAddress=email,
-                    billingName=billingName
+                    # billingName=billingName
                 )
                 order_details.save()
 
                 for order_item in cart_items:
                     ord_it = OrderItem.objects.create(
                         book=order_item.book.name,
-                        qty=order_item.book.qty,
                         price=order_item.book.price,
                         order=order_details
                     )
+                    #Once order has been completed, remove item from cart.
+                    cart_remove(request, book_id=order_item.book.id) 
                     ord_it.save()
-                    print('The order has been created')
+                    print('The order has been created') # Terminal Output
+                    
                 # redirect to thank you page
                 return redirect('order:thank_you', order_details.id)
+                
 
             except ObjectDoesNotExist:
                 pass

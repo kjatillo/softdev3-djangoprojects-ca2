@@ -5,12 +5,12 @@ from .models import Order, OrderItem
 class OrderItemAdmin(admin.TabularInline):
     model = OrderItem
     fieldsets = [
-        ('eBook', {'fields': ['ebook'],}),
+        ('Book', {'fields': ['book'],}),
         ('ISBN', {'fields': ['isbn'],}),
         ('Price', {'fields': ['price'],}),
     ]
     readonly_fields = [
-        'ebook',
+        'book',
         'isbn',
         'price'
     ]
