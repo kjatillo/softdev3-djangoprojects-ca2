@@ -128,6 +128,11 @@ nav ul li a {
 }
 
 /* Footer */
+.fixed_footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 footer, footer i {
     color: #f3f6f4;
 }
@@ -159,6 +164,7 @@ footer, footer i {
     height: 37em;
     display: block;
 }
+/* Cart */
 .cart-button{
     margin: auto;
     display: block;
@@ -168,4 +174,22 @@ footer, footer i {
 .my_custom_table {
 	min-width: 400px;
 	font-size: 14px;
+}
+.custom_image {
+	width: 100px;
+	height: 150px;
+}
+.my_custom_thead {
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	background-color: #f8f9fa!important;
+}
+.stripe-button-el, .my_custom_button {
+	width: 100% !important;
+    margin: 10px 0px 10px 0px !important;
+    display: block !important;
+	background-color: #198754 !important;
+	border: 0px !important;
+	background-image: none !important;
 }

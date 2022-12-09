@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 {% block metadescription %}
-    This is the storeping cart page. Proceed to review your items and place the order.
+    Please proceed to review your items and place the order.
 {% endblock %}
 {% block title %}
-    Cart - Perfect Cushion Store
+    Cart - Ebook Store [TBD]
 {% endblock %}
 {% block content %}
     {% if not cart_items %}
@@ -49,11 +49,13 @@
                                      alt="" class="float-left rounded custom_image"></a>
                                 </td>
                                 <td class="text-left">
-                                    {{cart_item.book.name}}
+                                    <strong>{{cart_item.book.name}}</strong>
+                                    {% comment %} {{cart_item.book.name}} {% endcomment %}
                                     <br>
-                                    Unit Price: €{{cart_item.book.price}}
                                     <br>
-                                    Qty: {{cart_item.qty}} x €{{cart_item.book.price}}
+                                    Price: <strong>€{{cart_item.book.price}}</strong>
+                                    <br>
+                                    {% comment %} Qty: {{cart_item.qty}} x €{{cart_item.book.price}} {% endcomment %}
                                 </td>
                                 <td>
                                     €{{cart_item.sub_total}}
@@ -64,12 +66,12 @@
                                            custom_icon"></i></a>&nbsp;
                                         <a href="{% url 'cart:cart_remove' cart_item.book.id %}" class="custom_a"><i class="fas fa-minus-circle 
                                            custom_icon"></i></a>&nbsp;  {% endcomment %}
-                                        <a href="{% url 'cart:clear_cart' cart_item.book.id %}" class="custom_icon"><i class="fas fa-trash-alt custom_icon"></i></a>
+                                        {% comment %} <a href="{% url 'cart:clear_cart' cart_item.book.id %}" class="custom_icon"><i class="fas fa-trash-alt custom_icon"></i></a> {% endcomment %}
                                     </td>
                                  {% comment %} {% else %} {% endcomment %}
                                     <td>
-                                        &nbsp;<a href="{% url 'cart:cart_remove' cart_item.book.id %}" class="custom_a"><i class="fas fa-minus-circle 
-                                        custom_icon"></i></a>&nbsp;
+                                        {% comment %} &nbsp;<a href="{% url 'cart:cart_remove' cart_item.book.id %}" class="custom_a"><i class="fas fa-minus-circle  {% endcomment %}
+                                        {% comment %} custom_icon"></i></a>&nbsp; {% endcomment %}
                                         <a href="{% url 'cart:clear_cart' cart_item.book.id %}" class="custom_icon"><i class="fas fa-trash-alt custom_icon"></i></a>
                                     </td> 
                                     <td></td>
@@ -92,9 +94,13 @@
                     <tbody>
                         <tr>
                             <td>
-                                Please review your storeping cart items before proceeding with the order payment.
+                                Please review your cart items before proceeding with the order payment.
                             </td>
                         </tr>
+                        <tr>
+                            <td>
+                                <strong>Subtotal: €{{ sub_total }}</strong>
+                            </td>
                         <tr>
                             <td class="text-left">
                                 Your total is: <strong>€{{ total }}</strong>
@@ -109,15 +115,16 @@
                              data-amount="{{ stripe_total }}"
                              data-name="Ebook Store"
                              data-description="{{ description }}"
-                             data-image="{% static 'images/logo.png' %}"
+                             data-image="{% static 'images/logo.png' %}">
 
                          </script>
                     </form>
                     
                 <div class="mx-auto">
-                    <a href="{% url 'store:all_books' %}" class="btn btn-secondary btn-block 
-                     my_custom_button">Continue 
-                    storeping</a>
+                    <a href="{% url 'store:all_books' %}" class="btn btn-success btn-block 
+                     my_custom_button">
+                     Continue browsing
+                    </a>
                 </div>
             </div>
         </div>
