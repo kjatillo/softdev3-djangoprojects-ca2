@@ -26,8 +26,8 @@
                     <p>€{{book.price}}</p>
                     <p class="my_title">book Description</p>
                     <p class="text-justify my_prod_text">{{book.description}}</p>
-
-                    {% comment %} <a class="btn btn-secondary" href="{% url 'cart:add_to_cart' book.id %}">Add to Cart</a> {% endcomment %}
+                    <br>
+                    <a class="cart-button btn btn-secondary" href="{% url 'cart:add_to_cart' book.id %}">Add to Cart</a>
                     
                 </div>
             </div>
