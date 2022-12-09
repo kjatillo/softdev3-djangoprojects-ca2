@@ -8,6 +8,17 @@ def book_view(request, genre_id=None):
     if genre_id:
         genre = get_object_or_404(Genre, id=genre_id)
         books = Ebook.objects.filter(genre=genre, available=True)
+        
+    # paginator = Paginator(products, 6)
+    # try:
+    #     page = int(request.GET.get('page', '1'))
+    # except:
+    #     page = 1
+    # try:
+    #     products = paginator.page(page)
+    # except (EmptyPage, InvalidPage):
+    #     products = paginator.page(paginator.num_pages)
+        
     return render(request, 'store/genre.html', {
         'genre': genre,
         'ebooks': books

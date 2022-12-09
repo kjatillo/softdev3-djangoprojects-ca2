@@ -193,3 +193,6 @@ footer, footer i {
 	border: 0px !important;
 	background-image: none !important;
 }
+.custom_download_button{
+    width: 25%
+}
