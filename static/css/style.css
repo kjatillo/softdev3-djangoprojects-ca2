@@ -99,17 +99,18 @@ nav ul li a {
 }
 
 /* Main */
-#explore {
-    display: flex;
-    justify-content: center;
-}
-
 #home-intro {
     margin-bottom: 2em;
     border-bottom: solid 1px;
 }
 
 #home-intro p:last-child {
+    margin-bottom: 3em;
+}
+
+#explore {
+    display: flex;
+    justify-content: center;
     margin-bottom: 3em;
 }
 
@@ -142,14 +143,14 @@ nav ul li a {
     padding: 1em 2em 1em 2em;
 }
 
-#explore .explore-content a {
-    text-decoration: none;
-    color: #000;
-}
-
 #explore .explore-content button:hover {
     background-color: #f3f6f4;
     text-decoration: underline;
+}
+
+#explore .explore-content a {
+    text-decoration: none;
+    color: #000;
 }
 
 /* Footer */
@@ -176,5 +177,27 @@ footer, footer i {
     #form-pass-change, #form-pass-reset, #pass-reset-done, #pass-reset-confirm, #pass-reset-complete, #user-profile, #edit-profile {
         margin: auto;
         width: 50%;
-    }   
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #nav-main {
+        justify-content: space-between;
+    }
+
+    #explore {
+        text-align: center;
+    }
+
+    #explore .explore-content {
+        width: 70%;
+    }
+
+    #explore .explore-btn-container button {
+        width: 80%;
+    }
+
+    #explore .explore-btn-container {
+        justify-content: center;
+    }
 }
