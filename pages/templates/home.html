@@ -64,21 +64,14 @@
     <div class="col-sm-12 col-md-6 explore-content">
         <h3 class="my_title">Browse by Genre</h3>
         <div class="explore-btn-container">
-            <button class="btn btn-default border-dark">
-                <a href="#">Adventure</a>
-            </button>
-            <button class="btn btn-default border-dark">
-                <a href="#">Romance</a>
-            </button>
-            <button class="btn btn-default border-dark">
-                <a href="#">Technology</a>
-            </button>
-            <button class="btn btn-default border-dark">
-                <a href="#">Science Fiction</a>
-            </button>
-            <button class="btn btn-default border-dark">
-                <a href="#">Fantasy</a>
-            </button>
+            {% for genre in links %}
+            <div>
+                <a href="{{ genre.get_absolute_url }}">
+                    <button class="btn btn-default border-dark">{{ genre.name }}</button>
+                </a>
+            </div>
+                
+            {% endfor %}
         </div>
     </div>
 </section>

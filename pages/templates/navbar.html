@@ -1,3 +1,4 @@
+{% load auth_extras %}
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark container-fluid sticky-top">
     <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -10,7 +11,16 @@
                         <a class="nav-link" href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'store:all_books' %}">Books</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">
+                                eBooks
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="{% url 'store:all_books' %}">All Genres</a></li>
+                                {% for genre in links %}
+                                    <li><a class="dropdown-item" href="{{ genre.get_absolute_url }}">{{ genre.name }}</a></li>
+                                {% endfor %}
+                            </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About Us</a>
@@ -18,7 +28,7 @@
                 </ul>
             </div>
     
-            <div class="justify-content-end" id="nav-login">
+            <div class="justify-content-end" id="user-option">
                 <ul class="navbar-nav">
                     {% if user.is_authenticated %}
                         <li class="nav-item dropdown">
@@ -26,14 +36,17 @@
                                 {{ user.username }}
                             </a>
                             <ul class="dropdown-menu">
+                                {% if user|has_group:'Manager' %}
+                                    <li><a class="dropdown-item" href="{% url 'store:book_create' %}">Add New eBook</a></li>
+                                {% endif %}
                                 {% if user.profile %}
                                     <li><a class="dropdown-item" href="{% url 'view_profile' user.profile.pk %}">View Profile</a></li>
                                     <li><a class="dropdown-item" href="{% url 'edit_profile' user.profile.pk %}">Edit Profile</a></li>
+                                    <li><a class="dropdown-item" href="{% url 'order:order_history' %}">Order History</a></li>
                                     <li><a class="dropdown-item" href="{% url 'password_change' %}">Change Password</a></li>
-                                    <li><a class="dropdown-item" href="#">Order History</a></li>
                                 {% else %}
-                                    <li><a class="dropdown-item" href="{% url 'password_change' %}">Change Password</a></li>
-                                    <li><a class="dropdown-item" href="#">Order History</a></li>
+                                <li><a class="dropdown-item" href="{% url 'order:order_history' %}">Order History</a></li>
+                                <li><a class="dropdown-item" href="{% url 'password_change' %}">Change Password</a></li>
                                 {% endif %}
                             </ul>
                         </li>

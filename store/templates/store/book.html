@@ -8,15 +8,15 @@
 {% endblock %}
 {% block content %}
 <div>
-    <div>
-        <p><a href="{% url 'store:all_books' %}">Home</a> | <a href="{{ book.genre.get_absolute_url }}">{{book.genre}}</a> |
-            {{book.name}}</p>
+    <div class="breadcrumb">
+        <p><a href="{% url 'store:all_books' %}">Home</a> / <a href="{{ book.genre.get_absolute_url }}">{{book.genre}}</a> /
+            <b>{{book.name}}</b></p>
     </div>
     <div class = "container">
         <br>
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
-                <div style="min-width: 18rem; img-size">
+                <div style="min-width: 18rem;">
                     <img class= "card text-center img-fluid rounded mx-auto d-block" src="{{book.image.url}}" alt="{{book.name}}">
                 </div>
             </div>
