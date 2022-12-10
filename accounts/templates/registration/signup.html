@@ -16,12 +16,10 @@
         <div>
             {% if not form.is_valid %}
             <div>
-                <br>
                 <h1 class="my_title">Create an account</h1>
-                <br>
+                
                 <div>
-                    <br>
-                    <p>Fill in the form to create a new account.</p>
+                    <p class="mb-4">Fill in the form to create a new account.</p>
                     <form method="POST">
                         <p>
                             {{ form | crispy }}
@@ -29,7 +27,6 @@
                         </p>
                         <button type="submit" class="btn btn-success">Register Account</button>
                     </form>
-                    <br>
                 </div>
             </div>
             {% endif %}

@@ -8,17 +8,13 @@
 
 {% block content %}
 <div id="edit-profile">
-    <br>
-    <h1 class="my_title text-center">Edit User Profile</h1>
-    <br>
-    
+    <h1 class="my_title text-center my-5">Edit User Profile</h1>
+
     <form method="POST">
         {% csrf_token %}
         {{ form | crispy }}
-        <br>
-        <input class="btn btn-success" type="submit" value="Save Changes">
-        <br>
-        <br>
+        
+        <input class="btn btn-success mb-5" type="submit" value="Save Changes">
     </form>
 </div>
 {% endblock content %}

@@ -1,4 +1,3 @@
-from django.contrib.auth.models import Group
 from django.shortcuts import redirect, render
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, DetailView, UpdateView
@@ -16,7 +15,7 @@ class SignUpView(CreateView):
             form.save()
             username = form.cleaned_data.get('username')
             signup_user = CustomUser.objects.get(username=username)
-            customer_group = Group.objects.get(name='Customer')
+            customer_group = form.cleaned_data.get('group')
             customer_group.user_set.add(signup_user)
             
             return redirect('login')
@@ -37,7 +36,6 @@ class ProfileEditView(UpdateView):
         'fav_book',
         'fav_author',
         'fav_genre',
-
     ]
 
 

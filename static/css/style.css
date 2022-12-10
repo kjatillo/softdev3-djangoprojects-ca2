@@ -94,7 +94,7 @@ nav ul li a {
     font-size: 12px;
 }
 
-#nav-login .dropdown-menu li {
+nav .dropdown-menu li {
     padding: 0;
 }
 
@@ -174,7 +174,7 @@ footer, footer i {
         margin-top: 5em;
     }
 
-    #form-pass-change, #form-pass-reset, #pass-reset-done, #pass-reset-confirm, #pass-reset-complete, #user-profile, #edit-profile {
+    #form-pass-change, #form-pass-reset, #pass-reset-done, #pass-reset-confirm, #pass-reset-complete, #user-profile, #edit-profile, #add-book {
         margin: auto;
         width: 50%;
     }

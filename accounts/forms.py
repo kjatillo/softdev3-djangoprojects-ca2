@@ -1,8 +1,12 @@
+from django import forms
 from django.contrib.auth.forms import UserChangeForm, UserCreationForm
+from django.contrib.auth.models import Group
 from .models import CustomUser
 
 
 class CustomUserCreationForm(UserCreationForm):
+    group = forms.ModelChoiceField(queryset=Group.objects.all(), required=True)
+
     def __init__(self, *args, **kwargs):
             super(CustomUserCreationForm, self).__init__(*args, **kwargs)
 
@@ -22,4 +26,4 @@ class CustomUserCreationForm(UserCreationForm):
 class CustomUserChangeForm(UserChangeForm):
     class Meta:
         model = CustomUser
-        fields = UserCreationForm.Meta.fields 
+        fields = UserCreationForm.Meta.fields

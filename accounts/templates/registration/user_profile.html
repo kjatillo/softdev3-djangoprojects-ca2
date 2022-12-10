@@ -6,15 +6,16 @@
 
 {% block content %}
 <div id="user-profile">
-    <br>
-    <h1 class="my_title text-center">User Profile</h1>
-    <br>
-    <p><b>Username:</b> {{ user.username }}</p>
-    <p><b>Email:</b> {{ user.email }}</p>
-    <p><b>Date of Birth: </b> {{ user.profile.date_of_birth }}</p>
-    <p><b>Favourite Book: </b> {{ user.profile.fav_book }}</p>
-    <p><b>Favourite Author: </b> {{ user.profile.fav_author }}</p>
-    <p><b>Favourite Genre: </b> {{ user.profile.fav_genre }}</p>
-    <br>
+    <h1 class="my_title text-center my-5">User Profile</h1>
+        <p><b>Username:</b> {{ user.username }}</p>
+        <p><b>Email:</b> {{ user.email }}</p>
+        {% if user.profile.date_of_birth != None %}
+            <p><b>Date of Birth: </b> {{ user.profile.date_of_birth }}</p>
+        {% else %}
+            <p><b>Date of Birth: </b></p>
+        {% endif %}
+        <p><b>Favourite Book: </b> {{ user.profile.fav_book }}</p>
+        <p><b>Favourite Author: </b> {{ user.profile.fav_author }}</p>
+        <p class="mb-5"><b>Favourite Genre: </b> {{ user.profile.fav_genre }}</p>
 </div>
 {% endblock content %}
