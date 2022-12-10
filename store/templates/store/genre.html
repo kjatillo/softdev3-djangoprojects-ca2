@@ -17,17 +17,26 @@ See our Ebooks here
 {% block content %}
 <!--Breadcrumb navigation-->
 {% if genre %}
-<div class="row, my_row_class">
+    <div class="row my_row_class">
+        <div class="mx-auto breadcrumb">
+            <p>
+                <a href="{% url 'store:all_books' %}">Our eBook Collection</a> / <b>{{ genre.name }}</b>
+            </p>
+        </div>
+    </div>
+{% endif %}
+<!-- {% if genre %}
+<div class="row my_row_class">
     <div class="mx-auto">
         {% comment %} <p><a href="{% url 'store:all_books' %}">Our book Collection</a> | {{genre.name}}</p> {% endcomment %}
     </div>
 </div>
 {% else %}
-<div class="row, my_row_class">
+<div class="row my_row_class">
     <div class="mx-auto">
         {% comment %} <p><a href="{% url 'store:all_books' %}">Our book Collection</a></p> {% endcomment %}
     </div>
-{% endif %}
+{% endif %} -->
 <div class="mx-auto">
 {% if genre %}
     <img class="my_image" src="{{genre.image.url}}" alt="{{genre.name}}">
