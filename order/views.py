@@ -19,7 +19,7 @@ class OrderHistory(LoginRequiredMixin, View):
 
 class OrderDetail(LoginRequiredMixin, View):
     def get(self, request, order_id):
-        if request.user_is_authenticated:
+        if request.user.is_authenticated:
             email = str(request.user.email)
             order = Order.objects.get(id=order_id, emailAddress=email)
             order_items = OrderItem.objects.filter(order=order)

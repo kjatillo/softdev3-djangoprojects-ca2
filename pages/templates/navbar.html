@@ -23,13 +23,18 @@
                     {% if user.is_authenticated %}
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                                Account
+                                {{ user.username }}
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Your eBooks</a></li>
-                                <li><a class="dropdown-item" href="#">Your Profile</a></li>
-                                <li><a class="dropdown-item" href="#">Edit Profile</a></li>
-                                <li><a class="dropdown-item" href="#">Order History</a></li>
+                                {% if user.profile %}
+                                    <li><a class="dropdown-item" href="{% url 'view_profile' user.profile.pk %}">View Profile</a></li>
+                                    <li><a class="dropdown-item" href="{% url 'edit_profile' user.profile.pk %}">Edit Profile</a></li>
+                                    <li><a class="dropdown-item" href="{% url 'password_change' %}">Change Password</a></li>
+                                    <li><a class="dropdown-item" href="#">Order History</a></li>
+                                {% else %}
+                                    <li><a class="dropdown-item" href="{% url 'password_change' %}">Change Password</a></li>
+                                    <li><a class="dropdown-item" href="#">Order History</a></li>
+                                {% endif %}
                             </ul>
                         </li>
                         <li class="nav-item">
