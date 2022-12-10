@@ -16,7 +16,7 @@
                                 eBooks
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="{% url 'store:all_books' %}">All Genres</a></li>
+                                <li><a class="dropdown-item" href="{% url 'store:all_books' %}">All Ebooks</a></li>
                                 {% for genre in links %}
                                     <li><a class="dropdown-item" href="{{ genre.get_absolute_url }}">{{ genre.name }}</a></li>
                                 {% endfor %}
