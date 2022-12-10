@@ -4,7 +4,7 @@
     Please proceed to review your items and place the order.
 {% endblock %}
 {% block title %}
-    Cart - Ebook Store [TBD]
+    Cart - Ebook Store
 {% endblock %}
 {% block content %}
     {% if not cart_items %}
@@ -101,11 +101,53 @@
                             <td>
                                 <strong>Subtotal: €{{ sub_total }}</strong>
                             </td>
-                        <tr>
+                        {% comment %} <tr>
                             <td class="text-left">
                                 Your total is: <strong>€{{ total }}</strong>
                             </td>
+                        </tr> {% endcomment %}
+{% comment %} Voucher {% endcomment %}
+                        {% if voucher %}
+                        <tr class="subtotal">
+                        <td>Total</td>
+                        <td colspan="4"></td>
+                        <td class="num">€{{ total|floatformat:"2" }}</td>
                         </tr>
+                        <tr>
+                            <td>
+                            "{{ voucher.code }}" voucher
+                            ({{ voucher.discount }}% off)
+                            </td>
+                            <td colspan="4"></td>
+                            <td class="num neg">
+                            - €{{ discount|floatformat:"2" }}
+                            </td>
+                        </tr>
+                        <tr class="total">
+                            <td>Total</td>
+                            <td colspan="4"></td>
+                            <td class="num">
+                                    €{{ new_total|floatformat:"2" }}
+                            </td>
+                        </tr>
+                        {% else %}
+                                <tr class="total">
+                                    <td>Total</td>
+                                    <td colspan="4"></td>
+                                    <td class="num">
+                                        €{{ total|floatformat:"2" }}
+                                    </td>
+                                </tr>
+                            {% endif %}
+                        </tbody>
+                    </table>
+                    <p>Apply a voucher:</p>
+                    <form action="{% url 'vouchers:apply' %}" method="post">
+                        {{ voucher_apply_form }}
+                        <input type="submit" value="Apply">
+                        {% csrf_token %}
+                    </form>
+{% comment %} end Voucher {% endcomment %}
                     </tbody>
                 </table>
                 <form action="" method="POST">

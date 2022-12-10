@@ -10,6 +10,8 @@ def cart_count(request):
             cart = Cart.objects.filter(cart_id=_cart_id(request))
             cart_items = CartItem.objects.all().filter(cart=cart[:1])
             for cart_item in cart_items:
+                if cart_item.qty > 1:
+                    cart_item.qty = 1
                 book_count += cart_item.qty
         except Cart.DoesNotExist:
             book_count = 0
