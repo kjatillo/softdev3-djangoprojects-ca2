@@ -5,6 +5,11 @@ from .models import Cart, CartItem
 from django.conf import settings
 from order.models import Order, OrderItem
 import stripe
+# Voucher
+from vouchers.models import Voucher
+from vouchers.forms import VoucherApplyForm
+from decimal import Decimal
+
 
 # Create your views here.
 
@@ -103,6 +108,12 @@ def cart_detail(request, total=0, counter=0, cart_items=None):
                       'description': description
                   }
                   )
+    # voucher
+    discount = 0
+    voucher_id = 0
+    new_total = 0
+    voucher = None
+
 
 
 def cart_remove(request, book_id):
