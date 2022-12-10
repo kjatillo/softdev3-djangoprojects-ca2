@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     # 3rd party
     'crispy_forms',
     'crispy_bootstrap5',
+    'stripe',
 ]
 
 MIDDLEWARE = [
@@ -72,6 +73,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'store.context_processors.menu_links',
+                'cart.context_processors.cart_count'
             ],
         },
     },
@@ -143,6 +146,8 @@ AUTH_USER_MODEL = 'accounts.CustomUser'
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 
+STRIPE_SECRET_KEY = 'sk_test_51MCstIBJza4tHWQvFT5gn2aXlyUozdNJWkIibhwQsMAqscYYYDSLBeJIID5hrxkmCRPxCq0ovSJb5TMLSArSxcoQ00hs916Zbo'
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51MCstIBJza4tHWQvrwaVgBnS0LcFcSFvZL4mxsiH9f4HZ6tgL0PWyvJTuxplNRzLBnqNqIU12bt1pmNlR6t2MpHv00VHVpXiu6'
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+{% load static %}
+{% block metadescription %}
+    Please proceed to review your items and place the order.
+{% endblock %}
+{% block title %}
+    Cart - Ebook Store [TBD]
+{% endblock %}
+{% block content %}
+    {% if not cart_items %}
+        <div>
+            <div class="text-center">
+                <br>
+                <h1 class="text-center my_title">
+                    Hmm, you cart seems to be empty
+                </h1>
+                <br>
+                <p class="text-center">
+                    Please click <a href="{% url 'store:all_books' %}">here</a> to head over to our collection of ebook.
+                </p>
+            </div>
+        </div>
+    {% else %}
+        <div>
+            <div class="text-center">
+                <br>
+                <h1 class="text-center my_title">
+                    Your cart
+                </h1>
+                <br>
+            </div>
+        </div>
+        <div class="row mx-auto">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
+                <table class="table my_custom_table">
+                    <thead class="my_custom_thead">
+                        <tr>
+                            <th colspan="5">
+                                Your items
+                            </th>
+                        </tr>
+                        
+                    </thead>
+                    <tbody>
+                        {% for cart_item in cart_items %}
+                            <tr>
+                                <td>
+                                    <a href="{{cart_item.book.get_url}}"><img src="{{cart_item.book.image.url}}" 
+                                     alt="" class="float-left rounded custom_image"></a>
+                                </td>
+                                <td class="text-left">
+                                    <strong>{{cart_item.book.name}}</strong>
+                                    {% comment %} {{cart_item.book.name}} {% endcomment %}
+                                    <br>
+                                    <br>
+                                    Price: <strong>€{{cart_item.book.price}}</strong>
+                                    <br>
+                                    {% comment %} Qty: {{cart_item.qty}} x €{{cart_item.book.price}} {% endcomment %}
+                                </td>
+                                <td>
+                                    €{{cart_item.sub_total}}
+                                </td>
+                                {% comment %} {% if cart_item.qty < cart_item.book.stock %}  {% endcomment %}
+                                    <td>
+                                        {% comment %} <a href="{% url 'cart:add_to_cart' cart_item.book.id %}" class="custom_a"><i class="fas fa-plus-circle  
+                                           custom_icon"></i></a>&nbsp;
+                                        <a href="{% url 'cart:cart_remove' cart_item.book.id %}" class="custom_a"><i class="fas fa-minus-circle 
+                                           custom_icon"></i></a>&nbsp;  {% endcomment %}
+                                        {% comment %} <a href="{% url 'cart:clear_cart' cart_item.book.id %}" class="custom_icon"><i class="fas fa-trash-alt custom_icon"></i></a> {% endcomment %}
+                                    </td>
+                                 {% comment %} {% else %} {% endcomment %}
+                                    <td>
+                                        {% comment %} &nbsp;<a href="{% url 'cart:cart_remove' cart_item.book.id %}" class="custom_a"><i class="fas fa-minus-circle  {% endcomment %}
+                                        {% comment %} custom_icon"></i></a>&nbsp; {% endcomment %}
+                                        <a href="{% url 'cart:clear_cart' cart_item.book.id %}" class="custom_icon"><i class="fas fa-trash-alt custom_icon"></i></a>
+                                    </td> 
+                                    <td></td>
+                                 {% comment %} {% endif %}  {% endcomment %}
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
+                <table class="table my_custom_table">
+                    <thead class="my_custom_thead">
+                        <tr>
+                            <th>
+                                Checkout
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Please review your cart items before proceeding with the order payment.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Subtotal: €{{ sub_total }}</strong>
+                            </td>
+                        <tr>
+                            <td class="text-left">
+                                Your total is: <strong>€{{ total }}</strong>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form action="" method="POST">
+                    {% csrf_token %}
+                        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                     data-key="{{ data_key }}"
+                             data-amount="{{ stripe_total }}"
+                             data-name="Ebook Store"
+                             data-description="{{ description }}"
+                             data-image="{% static 'images/logo.png' %}">
+
+                         </script>
+                    </form>
+                    
+                <div class="mx-auto">
+                    <a href="{% url 'store:all_books' %}" class="btn btn-success btn-block 
+                     my_custom_button">
+                     Continue browsing
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br>
+    {% endif %}
+{% endblock %}
