@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Genre, Ebook
+from django.core.paginator import Paginator, EmptyPage, InvalidPage
 # Create your views here.
 
 def book_view(request, genre_id=None):
@@ -9,15 +10,15 @@ def book_view(request, genre_id=None):
         genre = get_object_or_404(Genre, id=genre_id)
         books = Ebook.objects.filter(genre=genre, available=True)
         
-    # paginator = Paginator(products, 6)
-    # try:
-    #     page = int(request.GET.get('page', '1'))
-    # except:
-    #     page = 1
-    # try:
-    #     products = paginator.page(page)
-    # except (EmptyPage, InvalidPage):
-    #     products = paginator.page(paginator.num_pages)
+    paginator = Paginator(books, 6)
+    try:
+        page = int(request.GET.get('page', '1'))
+    except:
+        page = 1
+    try:
+        books = paginator.page(page)
+    except (EmptyPage, InvalidPage):
+        books = paginator.page(paginator.num_pages)
         
     return render(request, 'store/genre.html', {
         'genre': genre,

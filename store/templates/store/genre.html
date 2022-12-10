@@ -69,9 +69,10 @@ See our Ebooks here
         <hr>
         <div class="text-center">
             {% for pg in prods.paginator.page_range %}
-            <a href="?page={{pg}}" class="btn btn-light btn-sm {% 
-                if books.number == pg %}active">
-                {% comment %} {% endif %}"> {% endcomment %}
+            <a href="?page={{pg}}" class="btn btn-light btn-sm 
+            {% if books.number == pg %}
+                active
+            {% endif %}"> 
                 {{pg}}
              </a>
             {% endfor %}
