@@ -65,6 +65,10 @@ header i {
     margin-right: 25px;
 }
 
+#advance-search {
+    margin-left: 145px;
+}
+
 /* Navigation */
 #collapsibleNavbar {
     padding-top: .5rem;
@@ -235,6 +239,14 @@ footer, footer i {
 
     .card {
         min-height: 0;
+    }
+
+    #advance-search {
+        margin-left: 70px;
+    }
+
+    #dateAddedMax, #dateAddedMin {
+        margin-bottom: 15px;
     }
 }
 
