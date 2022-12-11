@@ -1,6 +1,7 @@
 ## Table of Contents
-* [General Information](#general-info)
+* [General Information](#general-information)
 * [Developers](#developers)
+* [Deployment](#deployment)
 * [Project Summary](#project-summary)
 * [Technologies](#technologies)
 * [Setup](#setup)
@@ -11,7 +12,7 @@ It is an eCommerce website with eBooks sold as products.
 It is written in Python using the Django framework for the server-side and HTML, CSS & Bootstrap for the front-end.
 
 ## Developers
-#### Software Development 3 - Year 2/Group A
+Software Development 3 - Year 2/Group A
 
 **Student Name:** Keneith Atillo <br>
 **Student Number:** X00190944 <br>
@@ -21,8 +22,19 @@ It is written in Python using the Django framework for the server-side and HTML,
 **Student Number:**  X00145689 <br>
 **Student Email:**  X00145689@mytudublin.ie
 
+## Deployment
+PythonAnywhere: 
+
 ## Project Summary
-Task | Status | Assigned To
+**Keneith:**
+* Accounts app
+* Order app
+* Search app
+* Automatic assignment of profile to new users and ability to edit on web front-end
+* Different user types (Customer & Manager with add book privilage)
+<br>
+
+
 	
 ## Technologies
 Project is created with:
