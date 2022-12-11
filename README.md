@@ -35,6 +35,14 @@ PythonAnywhere:
 <br>
 
 
+**Mohamud:**
+* Store app
+* Cart app
+* Voucher app
+* Website Deployment
+* Populate the store with the ebooks and genre
+<br>
+
 	
 ## Technologies
 Project is created with:
