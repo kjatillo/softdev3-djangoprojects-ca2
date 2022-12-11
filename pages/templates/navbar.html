@@ -21,10 +21,10 @@
                                     <li><a class="dropdown-item" href="{{ genre.get_absolute_url }}">{{ genre.name }}</a></li>
                                 {% endfor %}
                             </ul>
-                    </li>
+                    {% comment %} </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
+                        <a class="nav-link" href="{url 'about'}">About Us</a>
+                    </li> {% endcomment %}
                 </ul>
             </div>
     
