@@ -39,13 +39,46 @@ See our Ebooks here
 {% endif %} -->
 <div class="mx-auto">
 {% if genre %}
-    <img class="my_image" src="{{genre.image.url}}" alt="{{genre.name}}">
+    {% comment %} <img class="my_image" src="{{genre.image.url}}" alt="{{genre.name}}">
     </div>
     <br>
     <div>
         <h1 class="text-center my_title">{{genre.name}}</h1>
         <p class="text-justify">{{genre.description}}</p>
+    </div> {% endcomment %}
+
+
+    {% comment %} <div class="card mb-5 col-lg-10 h-100" style="max-width: 1200px;">
+  <div class="row g-2">
+    <div class="col-md-5">
+        <div>
+      <img src="{{genre.image.url}}" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">{{genre.description}}</p>
     </div>
+
+        {% comment %} <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> 
+      </div>
+    </div>
+  </div>
+</div> {% endcomment %}
+
+<div class="card mb-5 mt-1" style="max-width: 1000pc; min-height: 232px;">
+    <div class="row g-3">
+      <div class="col-md-4">
+        <img src="{{genre.image.url}}" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title text-center my_title">{{genre.name}}</h5>
+          <p class="card-text">{{genre.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
 {% else %}
     {% comment %} <img class="my_image my_image_padding" src="{% static 'images/banner.jpg' %}" alt="Our books Collection"> {% endcomment %}
     </div>
