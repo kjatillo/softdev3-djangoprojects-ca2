@@ -13,7 +13,7 @@ class OrderHistory(LoginRequiredMixin, View):
         return render(
             request,
             'order/order_history.html',
-            {'order_details.html': order_details}
+            {'order_details': order_details}
         )
 
 

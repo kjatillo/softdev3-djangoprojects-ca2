@@ -57,5 +57,8 @@ class OrderItem(models.Model):
     class Meta:
         db_table = 'OrderItem'
     
+    def sub_total(self):
+        return self.price
+    
     def __str__(self):
         return self.ebook

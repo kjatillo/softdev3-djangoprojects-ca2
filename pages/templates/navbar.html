@@ -16,7 +16,7 @@
                                 eBooks
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="{% url 'store:all_books' %}">All Genres</a></li>
+                                <li><a class="dropdown-item" href="{% url 'store:all_books' %}">All Ebooks</a></li>
                                 {% for genre in links %}
                                     <li><a class="dropdown-item" href="{{ genre.get_absolute_url }}">{{ genre.name }}</a></li>
                                 {% endfor %}
@@ -45,8 +45,8 @@
                                     <li><a class="dropdown-item" href="{% url 'order:order_history' %}">Order History</a></li>
                                     <li><a class="dropdown-item" href="{% url 'password_change' %}">Change Password</a></li>
                                 {% else %}
-                                <li><a class="dropdown-item" href="{% url 'order:order_history' %}">Order History</a></li>
-                                <li><a class="dropdown-item" href="{% url 'password_change' %}">Change Password</a></li>
+                                    <li><a class="dropdown-item" href="{% url 'order:order_history' %}">Order History</a></li>
+                                    <li><a class="dropdown-item" href="{% url 'password_change' %}">Change Password</a></li>
                                 {% endif %}
                             </ul>
                         </li>

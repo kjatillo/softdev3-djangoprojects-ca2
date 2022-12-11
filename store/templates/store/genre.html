@@ -62,11 +62,11 @@ See our Ebooks here
 <div class="container">
     <div class="row mx-auto">
         {% for book in ebooks %}
-        <div class="my_bottom_margin col-9 col-lg-4 col-sm-12 col-md-4">
+        <div class="my_bottom_margin col-9 col-lg-4 col-sm-12 col-md-4 mb-5 mx-auto">
             <div class="card text-center" aria-hidden="true" style="min-width:18rem;">
-                 <a class="img" href="{{book.get_absolute_url}}"><img class="card-img-top my_img-fluid "{% comment %}{% endcomment %}  src="{{book.image.url}}" alt="{{book.name}}"></a> 
+                 <a class="img" href="{{book.get_absolute_url}}"><img class="card-img-top"{% comment %}{% endcomment %}  src="{{book.image.url}}" alt="{{book.name}}"></a> 
                 <div class="card-body">
-                    <h4>{{book.name}}</h4>
+                    <h4 class="my_title">{{book.name}}</h4>
                     <p>€{{book.price}}</p>
                 </div>
             </div>

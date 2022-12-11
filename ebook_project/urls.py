@@ -27,5 +27,9 @@ urlpatterns = [
     path('order/', include('order.urls')),
     path('cart/', include('cart.urls')),
     path('vouchers/', include('vouchers.urls')),
+<<<<<<< HEAD
     path('search/',include('search.urls')),
+=======
+    path('search/', include('search.urls')),
+>>>>>>> 39b7a5b76256ac564ab5dc591beb0c1219398377
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
