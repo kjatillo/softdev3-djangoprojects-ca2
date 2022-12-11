@@ -9,39 +9,75 @@
 <div>
     <div class="text-center">
         <br>
-        <h1 class="text-center my_title">Order Details</h1>
+        <h1 class="my_title text-center my-5">Order Details</h1>
         <br>
-        <table class="table table-bordered">
+        <table class="table table-bordered mb-5">
             <tr>
-                <td><b>Product Name</b></td>
-                <td><b>ISBN</b></td>
+                <td><b>Title</b></td>
+                <td><b>Purchase Date/Time</b></td>
                 <td><b>Price</b></td>
                 <td><b>Sub-Total</b></td>
             </tr>
             {% for item in order_items %}
                 <tr>
-                    <td>{{ item.product }}</td>
-                    <td>{{ item.quantity }}</td>
+                    <td>{{ item.ebook }}</td>
+                    <td>{{ order.created }}</td>
                     <td>€{{ item.price }}</td>
                     <td>€{{ item.sub_total }}</td>
                 </tr>
             {% endfor %}
 
             <tr>
+                <td colspan="3"><b>Total</b></td>
+                <td colspan="2"><b>€{{ order.total }}</b></td>
+            </tr>
+
+            <tr>
                 <td class="text-left" colspan="3">
                     <b>Order #: </b>{{ order.id }}
                     <br>
-                    <b>Date: </b>{{ order.created|date:"d M Y" }}
+                    <b>Order Date: </b>{{ order.created|date:"d M Y" }}
                     <br>
-                    <b>Total: </b>€{{ order.total }}
-                    <br>
-                    <b>Order Status: Paid&nbsp;</b><i class="fas fa-check"></i>
+                    <b>Order Status: </b>Paid&nbsp;<i class="fas fa-check"></i>
+                    <br><br>
+                    <b>Total Paid: </b>€{{ order.total }}
                 </td>
                 <td class="text-left" colspan="2">
                     <b>Payment Details: </b>
                     <br>
                     <p>The order #{{ order.id }} has been paid successfully via Stripe.</p>
+
+                    <a href="{% url 'order:order_history' %}" style="text-decoration: none;">
+                        <button class="btn btn-secondary">Order History</button>&nbsp;
+                    </a>
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">Download eBook</button>
                 </td>
+
+                <!-- The Modal -->
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                    
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title modal-dialog-centered">Download</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                    
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                Download complete!
+                            </div>
+                    
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+  
             </tr>
         </table>
     </div>
