@@ -3,16 +3,17 @@
     <div class="container" id="nav-main">
         <div>
             <a href="{% url 'home' %}">
-                <img src="{% static 'images/main_icon.png' %}" width='60%' >
+                <img src="{% static 'images/main_icon.png' %}" width='60%'>
             </a>
         </div>
-        
+
         <div id="search-bar">
             <form action="{% url 'search:search_result' %}" method="GET" style="width: 100%;">
-                    <div class="input-group">
-                        <input type="search" class="form-control" placeholder="Search for eBooks" aria-label="Search" name="q">
-                        <button class="btn btn-dark" type="submit">Go</button>
-                    </div>
+                <div class="input-group">
+                    <input type="search" class="form-control" placeholder="Search for eBooks" aria-label="Search"
+                        name="q">
+                    <button class="btn btn-dark" type="submit">Go</button>
+                </div>
             </form>
         </div>
 
@@ -21,33 +22,99 @@
                 {% comment %} <i class="fas fa-shopping-cart"></i> {% endcomment %}
                 {% if book_count > 0 %}
                 {% comment %} <li class="nav-item"> {% endcomment %}
-                  <a class="nav-link" href="{% url 'cart:cart_detail' %}">
-                    <button type="button" class="btn btn-success position-relative">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag"
-                          viewBox="0 0 16 16">
-                          <path
-                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
-                        </svg>
-                  
-                        Cart <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{book_count}} <span
-                            class="visually-hidden">unread messages</span></span>
-                      </button>
+                    <a class="nav-link" href="{% url 'cart:cart_detail' %}">
+                        <button type="button" class="btn btn-success position-relative">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-bag" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                            </svg>
+
+                            Cart <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{book_count}}
+                                <span class="visually-hidden">unread messages</span></span>
+                        </button>
                     </a>
-                {% comment %} </li> {% endcomment %}
+                    {% comment %}
+                </li> {% endcomment %}
                 {% else %}
-                    <button type="button" class="btn btn-success position-relative">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag"
+                <button type="button" class="btn btn-success position-relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag"
                         viewBox="0 0 16 16">
                         <path
                             d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
-                        </svg>
-                
-                        Cart 
-                         {% comment %} <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0<span
-                            class="visually-hidden">unread messages</span></span>  {% endcomment %}
-                    </button>
+                    </svg>
+
+                    Cart
+                    {% comment %} <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0<span
+                            class="visually-hidden">unread messages</span></span> {% endcomment %}
+                </button>
                 {% endif %}
             </a>
+        </div>
+    </div>
+
+    <div class="container pb-3">
+        <div id="advance-search" style="font-size: 1em;">
+            <a data-bs-toggle="collapse" data-bs-target="#advanceSearch">
+                Advance Search <i class="fa fa-angle-down"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="collapse" id="advanceSearch">
+        <div class="container">
+            <main role="main" class="container">
+                <h3 class="my_title mt-3">Advance Filter Search</h3>
+                <form method="GET" action="{% url 'search:advance_search_result' %}">
+                    <div class="form-row my-3">
+                        <div class="form-group col-12">
+                            <div class="input-group">
+                                <input class="form-control" type="search" name="title_contains"
+                                    placeholder="Title contains..." />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row my-3">
+                        <div class="form-group col-12">
+                            <div class="input-group">
+                                <input class="form-control py-2" type="search" name="isbn_exact"
+                                    placeholder="ISBN exact..." />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row my-3">
+                        <div class="form-group col-12">
+                            <div class="input-group">
+                                <input class="form-control py-2" type="search" name="title_or_author"
+                                    placeholder="Title or author..." />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row my-3">
+                        <div class="form-group col-12">
+                            <div class="input-group">
+                                <input class="form-control py-2" type="search" name="genre"
+                                    placeholder="Genre..." />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row row">
+                        <div class="form-group col-md-2 col-lg-2">
+                            <label for="dateAddedMin">Date Added Minimum</label>
+                            <input type="date" class="form-control" id="dateAddedMin" name="date_min">
+                        </div>
+                        <div class="form-group col-md-2 col-lg-2">
+                            <label for="dateAddedMax">Date Added Maximum</label>
+                            <input type="date" class="form-control" id="dateAddedMax" name="date_max">
+                        </div>
+                    </div>
+            
+                    <button type="submit" class="btn btn-success mt-3 mb-5">Search</button>
+                </form>
+            </main>
         </div>
     </div>
 </header>
