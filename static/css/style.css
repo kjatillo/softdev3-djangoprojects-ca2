@@ -60,8 +60,9 @@ header i {
     font-size: 1.5rem;
 }
 
-header .input-group {
+#search-bar {
     width: 75%;
+    margin-right: 25px;
 }
 
 /* Navigation */
@@ -153,6 +154,23 @@ nav .dropdown-menu li {
     color: #000;
 }
 
+/* eBook Cards */
+.card {
+    min-height: 700px;
+}
+
+.card .card-img-top {
+    max-height: 600px; 
+    width: 100%;
+}
+
+.card .card-body h4 {
+    white-space: nowrap; 
+    width: 100%; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
 /* Footer */
 .fixed_footer{
     position: fixed;
@@ -164,7 +182,7 @@ footer, footer i {
 }
 
 /* Media Query */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
     nav #collapsibleNavbar {
         display: flex;
         justify-content: space-between;
@@ -185,7 +203,7 @@ footer, footer i {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
     #nav-main {
         justify-content: space-between;
     }
@@ -208,6 +226,15 @@ footer, footer i {
 
     #explore .explore-btn-container {
         justify-content: center;
+    }
+
+    #search-bar {
+        width: 60%;
+        margin-right: 30px;
+    }
+
+    .card {
+        min-height: 0;
     }
 }
 

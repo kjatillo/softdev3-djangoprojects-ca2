@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block metadescription %}
+    We have a variety of amazing eBooks available.
+{% endblock %}
+
+{% block title %}
+    Search - eBook Store
+{% endblock %}
+
+{% block content %}
+<div>
+    <p class="text-center mt-3 mb-5">You have searched for: <b>"{{ query }}"</b></p>
+</div>
+
+<div class="container">
+    <div class="row mx-auto">
+        {% for ebook in ebook_list %}
+            <div class="col-9 col-sm-12 col-md-4 col-lg-4 mb-5 mx-auto">
+                <div class="card text-center">
+                    <a href="{{ ebook.get_absolute_url }}">
+                        <img class="card-img-top"
+                            src="{{ ebook.image.url }}" alt="{{ ebook.name }}">
+                        </a>
+                    <div class="card-body">
+                        <h4 class="my_title">{{ ebook.name }}</h4>
+                        <p>€{{ ebook.price }}</p>
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            <div class="row mx-auto">
+                <p class="text-center mb-5">0 results found.</p>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
